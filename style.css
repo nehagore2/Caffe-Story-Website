@@ -1,0 +1,3799 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f1ed;
+    font-family: "Poppins", sans-serif;
+}
+
+/* FIRST COVER */
+
+.cover {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: #2d1710;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cover-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(35, 17, 11, 0.55);
+}
+
+.cover-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    color: white;
+}
+
+.coffee-logo {
+    width: 75px;
+    height: 75px;
+
+    border: 2px solid white;
+    border-radius: 50%;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+}
+
+.cover-content h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.cover-content p {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-top: 8px;
+}
+
+   /* =========================================
+   COFFEE EXPERIENCE SECTION
+========================================= */
+
+.coffee-experience {
+    width: 100%;
+    min-height: 720px;
+
+    background: #f5f1eb;
+
+    position: relative;
+
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: flex-start;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   LEFT IMAGE
+========================================= */
+
+.experience-image {
+    width: 38%;
+    height: 570px;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+.experience-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   RIGHT CONTENT
+========================================= */
+
+.experience-content {
+    width: 62%;
+
+    margin-top: 15px;
+}
+
+
+/* =========================================
+   BROWN HALF
+========================================= */
+
+.experience-top {
+    height: 350px;
+
+    background: #321b13;
+
+    color: white;
+
+    padding: 55px 60px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* Small heading */
+
+.experience-number {
+    color: #c59a50;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Main heading */
+
+.experience-top h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 68px;
+
+    font-weight: 500;
+
+    line-height: 0.9;
+
+    margin: 0;
+
+    max-width: 700px;
+}
+
+
+/* Description */
+
+.experience-text {
+    margin-top: 30px;
+
+    max-width: 560px;
+
+    color: #d9cec7;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   WHITE HALF
+========================================= */
+
+.experience-bottom {
+    height: 220px;
+
+    background: #ffffff;
+
+    padding: 55px 60px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 130px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* Steps */
+
+.experience-step {
+    width: 170px;
+}
+
+.experience-step span {
+    display: block;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 48px;
+
+    color: #aaa39d;
+
+    line-height: 1;
+
+    margin-bottom: 15px;
+}
+
+.experience-step p {
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    color: #756c65;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   GOLD BUTTON
+========================================= */
+
+.experience-arrow {
+    position: absolute;
+
+    right: 0;
+    top: 0;
+
+    width: 70px;
+    height: 70px;
+
+    background: #c59a50;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .coffee-experience {
+        padding: 40px 6%;
+
+        display: block;
+    }
+
+    .experience-image {
+        width: 100%;
+
+        height: 450px;
+    }
+
+    .experience-content {
+        width: 100%;
+
+        margin-top: 0;
+    }
+
+    .experience-top {
+        height: auto;
+
+        padding: 45px 30px;
+    }
+
+    .experience-top h2 {
+        font-size: 50px;
+    }
+
+    .experience-bottom {
+        height: auto;
+
+        padding: 40px 30px;
+
+        gap: 50px;
+
+        flex-wrap: wrap;
+    }
+
+    .experience-arrow {
+        display: none;
+    }
+
+}
+/* =========================================
+   SECTION 3 — THE STORY OF COFFEE
+========================================= */
+
+.story-section {
+    width: 100%;
+    min-height: 700px;
+
+    background: #f7f4ef;
+
+    position: relative;
+
+    padding: 70px 8%;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   TOP LEFT
+========================================= */
+
+.story-heading {
+    position: absolute;
+
+    left: 10%;
+    top: 80px;
+
+    width: 35%;
+
+    z-index: 2;
+}
+
+.story-label {
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    color: #9b7040;
+
+    margin-bottom: 25px;
+}
+
+.story-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 65px;
+
+    line-height: .9;
+
+    font-weight: 500;
+
+    color: #321b13;
+
+    margin: 0;
+}
+
+.story-line {
+    margin-top: 25px;
+
+    max-width: 300px;
+
+    font-size: 12px;
+
+    line-height: 1.6;
+
+    color: #756c65;
+}
+
+
+/* =========================================
+   TOP RIGHT IMAGE
+========================================= */
+
+.story-top-image {
+    position: absolute;
+
+    top: 0;
+    right: 8%;
+
+    width: 48%;
+    height: 365px;
+}
+
+.story-top-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   BOTTOM LEFT IMAGE
+========================================= */
+
+.story-bottom-image {
+    position: absolute;
+
+    left: 10%;
+    top: 350px;
+
+    width: 32%;
+    height: 250px;
+
+    z-index: 3;
+}
+
+.story-bottom-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   BROWN 85% BOX
+========================================= */
+
+.story-info {
+    position: absolute;
+
+    left: 10%;
+    top: 400px;
+
+    width: 38%;
+    height: 220px;
+
+    background: #321b13;
+
+    z-index: 2;
+}
+
+.story-percent {
+    width: 105px;
+    height: 105px;
+
+    border: 2px solid #c59a50;
+
+    border-radius: 50%;
+
+    position: absolute;
+
+    right: 45px;
+    top: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #c59a50;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 38px;
+}
+
+
+/* =========================================
+   BOTTOM RIGHT TEXT
+========================================= */
+
+.story-text {
+    position: absolute;
+
+    right: 8%;
+    top: 400px;
+
+    width: 43%;
+
+    background: white;
+
+    min-height: 220px;
+
+    padding: 50px 55px;
+
+    z-index: 4;
+}
+
+.story-text h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 38px;
+
+    font-weight: 500;
+
+    color: #321b13;
+
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    max-width: 450px;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #756c65;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .story-section {
+        min-height: auto;
+
+        padding: 50px 6%;
+
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    .story-heading,
+    .story-top-image,
+    .story-bottom-image,
+    .story-info,
+    .story-text {
+        position: relative;
+
+        left: auto;
+        right: auto;
+        top: auto;
+
+        width: 100%;
+    }
+
+    .story-heading {
+        margin-bottom: 30px;
+    }
+
+    .story-heading h2 {
+        font-size: 52px;
+    }
+
+    .story-top-image {
+        height: 350px;
+
+        margin-bottom: 20px;
+    }
+
+    .story-bottom-image {
+        height: 300px;
+
+        z-index: 3;
+    }
+
+    .story-info {
+        height: 180px;
+
+        margin-top: -30px;
+    }
+
+    .story-text {
+        min-height: auto;
+
+        padding: 40px 30px;
+    }
+
+}
+/* =========================================
+   SECTION 4 — COFFEE STORY
+========================================= */
+
+.coffee-story-2 {
+    width: 100%;
+    min-height: 700px;
+
+    background: #f8f6f2;
+
+    position: relative;
+
+    padding: 70px 8%;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.story2-heading {
+    position: absolute;
+
+    left: 16%;
+    top: 85px;
+
+    width: 32%;
+}
+
+.story2-label {
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    color: #a47742;
+
+    margin-bottom: 25px;
+}
+
+.story2-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 64px;
+
+    line-height: .9;
+
+    font-weight: 500;
+
+    color: #321b13;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.story2-description {
+    position: absolute;
+
+    top: 95px;
+    left: 47%;
+
+    width: 40%;
+
+    padding-left: 35px;
+
+    border-left: 1px solid #c8beb4;
+}
+
+.story2-description p {
+    max-width: 500px;
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #756c65;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   MAIN IMAGE
+========================================= */
+
+.story2-main-image {
+    position: absolute;
+
+    left: 8%;
+    bottom: 60px;
+
+    width: 42%;
+    height: 350px;
+}
+
+.story2-main-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================
+   SMALL IMAGES
+========================================= */
+
+.story2-small-image {
+    position: absolute;
+
+    width: 180px;
+}
+
+.story2-small-image img {
+    width: 100%;
+    height: 135px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.story2-small-image p {
+    font-size: 10px;
+
+    color: #756c65;
+
+    margin-top: 12px;
+
+    text-align: center;
+}
+
+
+/* FIRST SMALL IMAGE */
+
+.story2-small-one {
+    right: 24%;
+
+    top: 280px;
+}
+
+
+/* SECOND SMALL IMAGE */
+
+.story2-small-two {
+    right: 8%;
+
+    top: 280px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .coffee-story-2 {
+        min-height: auto;
+
+        padding: 50px 6%;
+
+        display: flex;
+
+        flex-direction: column;
+    }
+
+    .story2-heading,
+    .story2-description,
+    .story2-main-image,
+    .story2-small-image {
+        position: relative;
+
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+
+        width: 100%;
+    }
+
+    .story2-heading {
+        margin-bottom: 30px;
+    }
+
+    .story2-heading h2 {
+        font-size: 52px;
+    }
+
+    .story2-description {
+        padding-left: 20px;
+
+        margin-bottom: 35px;
+    }
+
+    .story2-main-image {
+        height: 350px;
+
+        margin-bottom: 30px;
+    }
+
+    .story2-small-image {
+        margin-bottom: 25px;
+    }
+
+    .story2-small-image img {
+        height: 220px;
+    }
+
+}
+/* =========================================
+   SECTION 5 - PERFECT COFFEE TASTE
+========================================= */
+
+.perfect-coffee {
+    width: 100%;
+    min-height: 720px;
+    display: flex;
+    background: #f8f6f2;
+    overflow: hidden;
+}
+
+
+/* LEFT BROWN SIDE */
+
+.perfect-left {
+    width: 48%;
+    min-height: 720px;
+    background: #321b13;
+    position: relative;
+}
+
+
+/* TABLET IMAGE */
+
+.perfect-tablet {
+    position: absolute;
+    width: 470px;
+    height: 440px;
+    top: 70px;
+    right: -55px;
+    z-index: 2;
+}
+
+.perfect-tablet img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* GOLD CARD */
+
+.perfect-card {
+    position: absolute;
+    width: 180px;
+    height: 220px;
+    background: #c59a50;
+    left: 65px;
+    top: 170px;
+    z-index: 4;
+    padding: 35px 20px;
+    text-align: center;
+    color: white;
+}
+
+.card-icon {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.perfect-card h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.perfect-card p {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* SMALL TEXT */
+
+.perfect-small-text {
+    position: absolute;
+    left: 65px;
+    bottom: 55px;
+    color: white;
+}
+
+.perfect-small-text span {
+    color: #c59a50;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+.perfect-small-text p {
+    margin-top: 15px;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #d8cdc6;
+}
+
+.small-line {
+    width: 120px;
+    height: 1px;
+    background: #c59a50;
+    margin-top: 20px;
+}
+
+
+/* RIGHT WHITE SIDE */
+
+.perfect-right {
+    width: 52%;
+    min-height: 720px;
+    background: #f8f6f2;
+    position: relative;
+    padding: 75px 7%;
+}
+
+
+/* HEADING */
+
+.perfect-heading {
+    max-width: 520px;
+}
+
+.perfect-heading > span {
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #9b7040;
+}
+
+.perfect-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 62px;
+    line-height: .9;
+    font-weight: 500;
+    color: #321b13;
+    margin: 25px 0;
+}
+
+.perfect-heading p {
+    max-width: 390px;
+    font-size: 11px;
+    line-height: 1.7;
+    color: #756c65;
+}
+
+
+/* BOTTOM IMAGE */
+
+.perfect-bottom-image {
+    position: absolute;
+    width: 390px;
+    height: 260px;
+    right: 7%;
+    bottom: 45px;
+    border: 8px solid #321b13;
+}
+
+.perfect-bottom-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* NUMBER */
+
+.perfect-number {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    color: #aaa39d;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .perfect-coffee {
+        display: block;
+    }
+
+    .perfect-left,
+    .perfect-right {
+        width: 100%;
+        min-height: 650px;
+    }
+
+    .perfect-tablet {
+        width: 70%;
+        height: 400px;
+        right: 8%;
+    }
+
+    .perfect-card {
+        left: 8%;
+    }
+
+    .perfect-right {
+        padding: 60px 8%;
+    }
+
+    .perfect-heading h2 {
+        font-size: 52px;
+    }
+
+    .perfect-bottom-image {
+        width: 70%;
+        right: 8%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .perfect-left {
+        min-height: 600px;
+    }
+
+    .perfect-tablet {
+        width: 80%;
+        height: 330px;
+        right: 5%;
+        top: 70px;
+    }
+
+    .perfect-card {
+        width: 145px;
+        height: 180px;
+        left: 25px;
+        top: 170px;
+        padding: 25px 15px;
+    }
+
+    .perfect-card h3 {
+        font-size: 20px;
+    }
+
+    .perfect-small-text {
+        left: 25px;
+        bottom: 35px;
+    }
+
+    .perfect-right {
+        min-height: 650px;
+    }
+
+    .perfect-heading h2 {
+        font-size: 48px;
+    }
+
+    .perfect-bottom-image {
+        width: 85%;
+        height: 220px;
+        right: 7.5%;
+        bottom: 35px;
+    }
+}
+/* =========================================
+   SECTION 6 - THE PERFECT COFFEE TASTE
+========================================= */
+
+.perfect-taste {
+    width: 100%;
+    height: 650px;
+    display: grid;
+    grid-template-columns: 52% 48%;
+    background: #f8f6f1;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* =========================================
+   LEFT WHITE AREA
+========================================= */
+
+.taste-left {
+    position: relative;
+    background: #f8f6f1;
+    padding: 45px 7%;
+    z-index: 2;
+}
+
+.taste-logo {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 15px;
+    color: #321b13;
+    letter-spacing: 1px;
+    margin-bottom: 55px;
+}
+
+.taste-left h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 58px;
+    font-weight: 500;
+    line-height: .9;
+    color: #321b13;
+    margin: 0 0 22px;
+}
+
+.taste-description {
+    width: 350px;
+    font-size: 11px;
+    line-height: 1.7;
+    color: #756c65;
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   SMALL INFORMATION ROWS
+========================================= */
+
+.taste-feature {
+    width: 360px;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #ddd6ce;
+    padding: 12px 0;
+}
+
+.taste-feature span {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #c7b9aa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a47742;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.taste-feature h4 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #321b13;
+    margin: 0 0 4px;
+}
+
+.taste-feature p {
+    font-size: 9px;
+    color: #756c65;
+    margin: 0;
+}
+
+
+/* =========================================
+   RIGHT AREA
+========================================= */
+
+.taste-right {
+    position: relative;
+    background: #f8f6f1;
+    height: 650px;
+    overflow: hidden;
+}
+
+
+/* BROWN RECTANGLE */
+
+.taste-brown-box {
+    position: absolute;
+    right: 0;
+    top: 75px;
+    width: 82%;
+    height: 430px;
+    background: #321b13;
+    z-index: 1;
+}
+
+.taste-number {
+    position: absolute;
+    right: 40px;
+    top: 45px;
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 38px;
+}
+
+.taste-number span {
+    color: #c59a50;
+    font-size: 18px;
+}
+
+.taste-brown-box > p {
+    position: absolute;
+    right: 45px;
+    top: 125px;
+    color: #d8cdc6;
+    font-size: 9px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
+
+.taste-lines {
+    position: absolute;
+    right: 45px;
+    top: 205px;
+    width: 100px;
+}
+
+.taste-lines span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #c59a50;
+    margin-bottom: 9px;
+}
+
+
+/* =========================================
+   LARGE COFFEE IMAGE
+========================================= */
+
+.taste-main-image {
+    position: absolute;
+    left: -25px;
+    top: 105px;
+    width: 390px;
+    height: 440px;
+    z-index: 3;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+.taste-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================================
+   GOLD SQUARE
+========================================= */
+
+.taste-gold-box {
+    position: absolute;
+    right: 45px;
+    bottom: 70px;
+    width: 115px;
+    height: 115px;
+    background: #c59a50;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+}
+
+
+/* =========================================
+   PAGE NUMBER
+========================================= */
+
+.taste-page-number {
+    position: absolute;
+    right: 25px;
+    bottom: 18px;
+    color: #aaa39d;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    z-index: 10;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .perfect-taste {
+        height: auto;
+        display: block;
+    }
+
+    .taste-left {
+        min-height: 600px;
+        padding: 50px 8%;
+    }
+
+    .taste-left h2 {
+        font-size: 52px;
+    }
+
+    .taste-feature {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .taste-right {
+        height: 600px;
+    }
+
+    .taste-brown-box {
+        width: 75%;
+    }
+
+    .taste-main-image {
+        width: 55%;
+        height: 390px;
+        left: 8%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .taste-left {
+        min-height: 550px;
+        padding: 40px 7%;
+    }
+
+    .taste-left h2 {
+        font-size: 45px;
+    }
+
+    .taste-description {
+        width: 100%;
+    }
+
+    .taste-right {
+        height: 550px;
+    }
+
+    .taste-brown-box {
+        top: 55px;
+        width: 78%;
+        height: 350px;
+    }
+
+    .taste-main-image {
+        width: 70%;
+        height: 350px;
+        left: 5%;
+        top: 85px;
+    }
+
+    .taste-gold-box {
+        width: 90px;
+        height: 90px;
+        right: 25px;
+        bottom: 55px;
+    }
+}
+/* =====================================================
+   SECTION 7 — THE STORY OF COFFEE
+===================================================== */
+
+.coffee-story-section {
+    width: 100%;
+    min-height: 720px;
+
+    display: grid;
+    grid-template-columns: 25% 42% 33%;
+
+    background: #321b13;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   LEFT BROWN AREA
+===================================================== */
+
+.story7-left {
+    background: #321b13;
+
+    padding: 175px 45px 50px;
+
+    position: relative;
+}
+
+
+.story7-small-image {
+    width: 225px;
+    height: 185px;
+
+    overflow: hidden;
+
+    margin-bottom: 38px;
+}
+
+
+.story7-small-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.story7-left-content {
+    max-width: 220px;
+
+    color: #f5eee8;
+}
+
+
+.story7-number {
+    display: block;
+
+    color: #c59a50;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 22px;
+}
+
+
+.story7-left-content p {
+    font-size: 11px;
+
+    line-height: 1.8;
+
+    color: #d5c8bf;
+
+    max-width: 200px;
+}
+
+
+/* =====================================================
+   LARGE CENTER IMAGE
+===================================================== */
+
+.story7-main-image {
+    width: 100%;
+    height: 560px;
+
+    margin-top: 65px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.story7-main-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =====================================================
+   RIGHT WHITE AREA
+===================================================== */
+
+.story7-right {
+    min-height: 720px;
+
+    background: #f7f4ef;
+
+    position: relative;
+}
+
+
+/* =====================================================
+   TOP BAR
+===================================================== */
+
+.story7-top {
+    height: 65px;
+
+    border-bottom: 1px solid #ded8d1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 35px;
+
+    color: #6f655e;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.story7-content {
+    padding: 75px 55px;
+}
+
+
+.story7-label {
+    color: #9b7040;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+}
+
+
+.story7-content h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 58px;
+
+    line-height: .92;
+
+    font-weight: 500;
+
+    color: #1f1713;
+
+    margin: 25px 0 28px;
+}
+
+
+.story7-divider {
+    width: 60px;
+
+    height: 1px;
+
+    background: #a47742;
+
+    margin-bottom: 25px;
+}
+
+
+.story7-content p {
+    max-width: 320px;
+
+    color: #706760;
+
+    font-size: 11px;
+
+    line-height: 1.85;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   LINK
+===================================================== */
+
+.story7-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 18px;
+
+    padding-bottom: 8px;
+
+    border-bottom: 1px solid #a47742;
+
+    text-decoration: none;
+
+    color: #3d2a20;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+}
+
+
+.story7-link span {
+    font-size: 14px;
+
+    color: #9b7040;
+}
+
+
+/* =====================================================
+   PAGE NUMBER
+===================================================== */
+
+.story7-page-number {
+    position: absolute;
+
+    right: 28px;
+
+    bottom: 18px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 17px;
+
+    color: #aaa39d;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .coffee-story-section {
+        grid-template-columns: 1fr;
+    }
+
+
+    .story7-left {
+        min-height: 450px;
+
+        padding: 70px 35px;
+    }
+
+
+    .story7-small-image {
+        width: 260px;
+        height: 190px;
+    }
+
+
+    .story7-main-image {
+        height: 500px;
+
+        margin-top: 0;
+    }
+
+
+    .story7-right {
+        min-height: 650px;
+    }
+
+
+    .story7-content {
+        padding: 60px 35px;
+    }
+
+
+    .story7-content h2 {
+        font-size: 50px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .story7-left {
+        padding: 50px 25px;
+    }
+
+
+    .story7-small-image {
+        width: 100%;
+        height: 200px;
+    }
+
+
+    .story7-main-image {
+        height: 380px;
+    }
+
+
+    .story7-top {
+        padding: 0 20px;
+    }
+
+
+    .story7-content {
+        padding: 50px 25px;
+    }
+
+
+    .story7-content h2 {
+        font-size: 43px;
+    }
+
+}
+/* =====================================================
+   SECTION 8 — COFFEE MOMENT
+===================================================== */
+
+.coffee-moment-section {
+    width: 100%;
+    min-height: 720px;
+
+    background: #f7f4ef;
+
+    display: grid;
+
+    grid-template-columns: 32% 43% 25%;
+    grid-template-rows: 480px 240px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   LEFT CONTENT
+===================================================== */
+
+.moment-left {
+    background: #f7f4ef;
+
+    padding: 90px 45px 40px 10%;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.moment-label {
+    display: block;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    color: #9b7040;
+
+    margin-bottom: 28px;
+}
+
+
+.moment-left h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 65px;
+
+    font-weight: 500;
+
+    line-height: .9;
+
+    color: #321b13;
+
+    margin: 0 0 30px;
+}
+
+
+.moment-description {
+    max-width: 300px;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+
+    color: #756c65;
+
+    margin: 0;
+}
+
+
+.moment-line {
+    width: 75px;
+
+    height: 1px;
+
+    background: #c59a50;
+
+    margin-top: 30px;
+}
+
+
+/* =====================================================
+   MAIN IMAGE
+===================================================== */
+
+.moment-image {
+    width: 100%;
+    height: 480px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+.moment-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =====================================================
+   RIGHT BROWN BOX
+===================================================== */
+
+.moment-info {
+    height: 480px;
+
+    background: #321b13;
+
+    padding: 60px 35px;
+
+    position: relative;
+
+    color: white;
+}
+
+
+.moment-circle {
+    width: 90px;
+    height: 90px;
+
+    border: 1px solid #c59a50;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #c59a50;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+
+    margin-bottom: 35px;
+}
+
+
+.moment-info h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 32px;
+
+    font-weight: 500;
+
+    line-height: 1;
+
+    margin: 0 0 20px;
+}
+
+
+.moment-info p {
+    max-width: 180px;
+
+    font-size: 10px;
+
+    line-height: 1.8;
+
+    color: #d5c8bf;
+
+    margin: 0;
+}
+
+
+.moment-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+    padding-bottom: 7px;
+
+    border-bottom: 1px solid #c59a50;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+}
+
+
+.moment-button span {
+    color: #c59a50;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   BOTTOM AREA
+===================================================== */
+
+.moment-bottom {
+    grid-column: 1 / 4;
+
+    background: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 10%;
+
+    position: relative;
+
+    z-index: 4;
+}
+
+
+.moment-small-image {
+    width: 250px;
+    height: 165px;
+
+    overflow: hidden;
+}
+
+
+.moment-small-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.moment-bottom-text {
+    margin-left: 45px;
+
+    max-width: 300px;
+}
+
+
+.moment-bottom-text span {
+    display: block;
+
+    color: #9b7040;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+
+.moment-bottom-text p {
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    color: #756c65;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   PAGE NUMBER
+===================================================== */
+
+.moment-page-number {
+    position: absolute;
+
+    right: 30px;
+
+    bottom: 18px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 17px;
+
+    color: #aaa39d;
+
+    z-index: 10;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .coffee-moment-section {
+        display: flex;
+
+        flex-direction: column;
+
+        min-height: auto;
+    }
+
+
+    .moment-left {
+        padding: 60px 8%;
+    }
+
+
+    .moment-left h2 {
+        font-size: 55px;
+    }
+
+
+    .moment-image {
+        height: 450px;
+    }
+
+
+    .moment-info {
+        height: auto;
+
+        min-height: 400px;
+
+        padding: 50px 8%;
+    }
+
+
+    .moment-bottom {
+        padding: 40px 8%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .moment-small-image {
+        width: 100%;
+
+        max-width: 350px;
+
+        height: 220px;
+    }
+
+
+    .moment-bottom-text {
+        margin-left: 0;
+
+        margin-top: 25px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .moment-left {
+        padding: 50px 25px;
+    }
+
+
+    .moment-left h2 {
+        font-size: 45px;
+    }
+
+
+    .moment-image {
+        height: 350px;
+    }
+
+
+    .moment-info {
+        min-height: 380px;
+
+        padding: 45px 25px;
+    }
+
+
+    .moment-bottom {
+        padding: 35px 25px;
+    }
+
+
+    .moment-small-image {
+        height: 190px;
+    }
+
+}
+/* =====================================================
+   SECTION 9 — INGREDIENTS COFFEE
+===================================================== */
+
+.ingredients-section {
+    width: 100%;
+    min-height: 720px;
+
+    background: #f8f6f1;
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 55px 6% 45px;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.ingredients-heading {
+    position: absolute;
+
+    left: 8%;
+
+    top: 55px;
+
+    z-index: 5;
+}
+
+
+.ingredients-heading span {
+    display: block;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    color: #9b7040;
+
+    margin-bottom: 18px;
+}
+
+
+.ingredients-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 57px;
+
+    line-height: .95;
+
+    font-weight: 500;
+
+    color: #241914;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   IMAGE COLLAGE
+===================================================== */
+
+.ingredients-gallery {
+    position: absolute;
+
+    left: 9%;
+
+    top: 185px;
+
+    width: 62%;
+
+    height: 390px;
+}
+
+
+/* ALL IMAGES */
+
+.ingredient-img {
+    position: absolute;
+
+    overflow: hidden;
+}
+
+
+.ingredient-img img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* IMAGE 1 */
+
+.ingredient-img-one {
+    left: 0;
+
+    top: 0;
+
+    width: 190px;
+
+    height: 250px;
+}
+
+
+/* IMAGE 2 */
+
+.ingredient-img-two {
+    left: 205px;
+
+    top: 0;
+
+    width: 185px;
+
+    height: 165px;
+}
+
+
+/* IMAGE 3 */
+
+.ingredient-img-three {
+    left: 205px;
+
+    top: 178px;
+
+    width: 185px;
+
+    height: 212px;
+}
+
+
+/* IMAGE 4 */
+
+.ingredient-img-four {
+    left: 400px;
+
+    top: 0;
+
+    width: 285px;
+
+    height: 390px;
+}
+
+
+/* =====================================================
+   RIGHT INFORMATION
+===================================================== */
+
+.ingredients-info {
+    position: absolute;
+
+    right: 7%;
+
+    top: 255px;
+
+    width: 25%;
+
+    padding-left: 25px;
+}
+
+
+.ingredients-label {
+    display: block;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 25px;
+
+    font-weight: 600;
+
+    color: #321b13;
+
+    margin-bottom: 25px;
+}
+
+
+.ingredients-info > p {
+    font-size: 11px;
+
+    line-height: 1.8;
+
+    color: #756c65;
+
+    max-width: 270px;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   ICONS
+===================================================== */
+
+.ingredient-icons {
+    display: flex;
+
+    gap: 18px;
+
+    margin-top: 35px;
+}
+
+
+.ingredient-icon {
+    width: 55px;
+
+    height: 55px;
+
+    border: 1px solid #c8b8a5;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #9b7040;
+
+    font-size: 19px;
+}
+
+
+.ingredient-icon:first-child {
+    background: #c59a50;
+
+    color: white;
+
+    border-color: #c59a50;
+}
+
+
+/* =====================================================
+   BOTTOM TEXT
+===================================================== */
+
+.ingredients-bottom {
+    position: absolute;
+
+    left: 8%;
+
+    bottom: 55px;
+
+    width: 500px;
+
+    border-top: 1px solid #d8d1ca;
+
+    padding-top: 18px;
+}
+
+
+.ingredients-bottom span {
+    color: #9b7040;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+}
+
+
+.ingredients-bottom p {
+    font-size: 10px;
+
+    line-height: 1.6;
+
+    color: #756c65;
+
+    margin-top: 10px;
+
+    max-width: 420px;
+}
+
+
+/* =====================================================
+   PAGE NUMBER
+===================================================== */
+
+.ingredients-page-number {
+    position: absolute;
+
+    right: 30px;
+
+    bottom: 18px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 18px;
+
+    color: #aaa39d;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .ingredients-heading h2 {
+        font-size: 50px;
+    }
+
+    .ingredients-gallery {
+        width: 60%;
+    }
+
+    .ingredient-img-four {
+        width: 240px;
+    }
+
+    .ingredients-info {
+        width: 28%;
+        right: 5%;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .ingredients-section {
+        min-height: auto;
+
+        padding: 55px 7%;
+
+        display: flex;
+
+        flex-direction: column;
+    }
+
+
+    .ingredients-heading,
+    .ingredients-gallery,
+    .ingredients-info,
+    .ingredients-bottom {
+        position: relative;
+
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+
+        width: 100%;
+    }
+
+
+    .ingredients-heading {
+        margin-bottom: 40px;
+    }
+
+
+    .ingredients-heading h2 {
+        font-size: 48px;
+    }
+
+
+    .ingredients-gallery {
+        height: 500px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .ingredient-img-one {
+        width: 32%;
+
+        height: 300px;
+    }
+
+
+    .ingredient-img-two {
+        left: 35%;
+
+        width: 30%;
+
+        height: 190px;
+    }
+
+
+    .ingredient-img-three {
+        left: 35%;
+
+        top: 205px;
+
+        width: 30%;
+
+        height: 295px;
+    }
+
+
+    .ingredient-img-four {
+        left: 68%;
+
+        width: 32%;
+
+        height: 500px;
+    }
+
+
+    .ingredients-info {
+        padding-left: 0;
+
+        margin-bottom: 40px;
+    }
+
+
+    .ingredients-info > p {
+        max-width: 450px;
+    }
+
+
+    .ingredients-bottom {
+        border-top: 1px solid #d8d1ca;
+
+        padding-top: 20px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .ingredients-section {
+        padding: 45px 25px;
+    }
+
+
+    .ingredients-heading h2 {
+        font-size: 42px;
+    }
+
+
+    .ingredients-gallery {
+        height: 420px;
+    }
+
+
+    .ingredient-img-one {
+        height: 250px;
+    }
+
+
+    .ingredient-img-two {
+        height: 160px;
+    }
+
+
+    .ingredient-img-three {
+        top: 175px;
+
+        height: 245px;
+    }
+
+
+    .ingredient-img-four {
+        height: 420px;
+    }
+
+
+    .ingredients-label {
+        font-size: 23px;
+    }
+
+
+    .ingredient-icons {
+        gap: 12px;
+    }
+
+
+    .ingredient-icon {
+        width: 50px;
+
+        height: 50px;
+    }
+
+}
+/* =====================================================
+   SECTION 10 — MARKETPLACE CAFFECO COFFEE
+===================================================== */
+
+.marketplace-section {
+    width: 100%;
+    min-height: 720px;
+
+    background: #f8f6f1;
+
+    display: grid;
+
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 400px 320px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   LEFT IMAGE
+===================================================== */
+
+.marketplace-image {
+    grid-column: 1;
+
+    grid-row: 1 / 3;
+
+    width: 315px;
+
+    height: 570px;
+
+    margin-left: 10%;
+
+    margin-top: 75px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    z-index: 3;
+}
+
+
+.marketplace-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =====================================================
+   RIGHT TOP CONTENT
+===================================================== */
+
+.marketplace-content {
+    grid-column: 2;
+
+    grid-row: 1;
+
+    background: #f8f6f1;
+
+    padding: 90px 8% 30px 5%;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.marketplace-label {
+    display: block;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    color: #9b7040;
+
+    margin-bottom: 20px;
+}
+
+
+.marketplace-content h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 60px;
+
+    font-weight: 500;
+
+    line-height: .92;
+
+    color: #241914;
+
+    margin: 0 0 22px;
+}
+
+
+.marketplace-description {
+    max-width: 430px;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    color: #756c65;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   PRODUCT CARDS
+===================================================== */
+
+.marketplace-products {
+    display: flex;
+
+    gap: 22px;
+
+    margin-top: 30px;
+}
+
+
+.marketplace-product {
+    width: 205px;
+
+    height: 105px;
+
+    background: #c59a50;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    color: #241914;
+
+    box-shadow: 0 5px 12px rgba(0,0,0,.08);
+}
+
+
+.product-icon {
+    width: 42px;
+
+    height: 55px;
+
+    border: 2px solid #5d4227;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+
+    color: #321b13;
+}
+
+
+.marketplace-product strong {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 31px;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   BROWN BOTTOM
+===================================================== */
+
+.marketplace-bottom {
+    grid-column: 1 / 3;
+
+    grid-row: 2;
+
+    background: #321b13;
+
+    position: relative;
+
+    padding-left: 46%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 55px;
+
+    color: white;
+}
+
+
+/* =====================================================
+   DISCOUNT CIRCLE
+===================================================== */
+
+.marketplace-discount {
+    width: 105px;
+
+    height: 105px;
+
+    border: 1px solid #c59a50;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+}
+
+
+.marketplace-discount::before {
+    content: "";
+
+    position: absolute;
+
+    width: 88px;
+
+    height: 88px;
+
+    border: 1px solid rgba(197,154,80,.35);
+
+    border-radius: 50%;
+}
+
+
+.marketplace-discount span {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 29px;
+
+    color: #c59a50;
+}
+
+
+/* =====================================================
+   BOTTOM TEXT
+===================================================== */
+
+.marketplace-bottom-text {
+    max-width: 330px;
+}
+
+
+.marketplace-bottom-text h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    margin: 0 0 15px;
+
+    color: white;
+}
+
+
+.marketplace-bottom-text p {
+    font-size: 10px;
+
+    line-height: 1.7;
+
+    color: #d5c8bf;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   PAGE NUMBER
+===================================================== */
+
+.marketplace-page-number {
+    position: absolute;
+
+    right: 28px;
+
+    bottom: 17px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 18px;
+
+    color: #aaa39d;
+
+    z-index: 10;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .marketplace-section {
+        display: flex;
+
+        flex-direction: column;
+
+        min-height: auto;
+    }
+
+
+    .marketplace-image {
+        width: 80%;
+
+        max-width: 400px;
+
+        height: 500px;
+
+        margin: 50px auto 0;
+    }
+
+
+    .marketplace-content {
+        padding: 60px 8%;
+    }
+
+
+    .marketplace-content h2 {
+        font-size: 52px;
+    }
+
+
+    .marketplace-products {
+        flex-wrap: wrap;
+    }
+
+
+    .marketplace-bottom {
+        min-height: 300px;
+
+        padding: 50px 8%;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .marketplace-image {
+        width: 85%;
+
+        height: 420px;
+    }
+
+
+    .marketplace-content {
+        padding: 50px 25px;
+    }
+
+
+    .marketplace-content h2 {
+        font-size: 44px;
+    }
+
+
+    .marketplace-products {
+        gap: 12px;
+    }
+
+
+    .marketplace-product {
+        width: 160px;
+
+        height: 90px;
+    }
+
+
+    .marketplace-product strong {
+        font-size: 25px;
+    }
+
+
+    .marketplace-bottom {
+        padding: 45px 25px;
+
+        gap: 25px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .marketplace-discount {
+        width: 85px;
+
+        height: 85px;
+    }
+
+}
+/* =====================================================
+   SECTION 11 — THE PERFECT COFFEE TASTE
+===================================================== */
+
+.perfect-taste-2 {
+    width: 100%;
+    min-height: 720px;
+
+    background: #f8f6f1;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   TOP SMALL LINE
+===================================================== */
+
+.taste2-heading {
+    position: absolute;
+
+    left: 10%;
+
+    top: 125px;
+
+    width: 30%;
+
+    z-index: 3;
+}
+
+
+.taste2-heading span {
+    display: block;
+
+    font-size: 8px;
+
+    letter-spacing: 3px;
+
+    color: #9b7040;
+
+    margin-bottom: 22px;
+}
+
+
+.taste2-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 58px;
+
+    font-weight: 500;
+
+    line-height: .9;
+
+    color: #241914;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   MAIN IMAGE
+===================================================== */
+
+.taste2-main-image {
+    position: absolute;
+
+    left: 31%;
+
+    top: 105px;
+
+    width: 43%;
+
+    height: 400px;
+
+    overflow: hidden;
+
+    z-index: 2;
+
+    box-shadow: 0 8px 18px rgba(0,0,0,.12);
+}
+
+
+.taste2-main-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =====================================================
+   BROWN INFORMATION BOX
+===================================================== */
+
+.taste2-info {
+    position: absolute;
+
+    right: 7%;
+
+    top: 105px;
+
+    width: 23%;
+
+    height: 400px;
+
+    background: #321b13;
+
+    padding: 55px 35px;
+
+    color: white;
+
+    z-index: 1;
+}
+
+
+.taste2-info strong {
+    display: block;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 42px;
+
+    font-weight: 500;
+
+    color: white;
+
+    margin-bottom: 22px;
+}
+
+
+.taste2-info strong span {
+    color: #c59a50;
+
+    font-size: 25px;
+}
+
+
+.taste2-info p {
+    font-size: 9px;
+
+    line-height: 1.8;
+
+    letter-spacing: 2px;
+
+    color: #d8cdc6;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   GOLD LINES
+===================================================== */
+
+.taste2-lines {
+    margin-top: 35px;
+
+    width: 100px;
+}
+
+
+.taste2-lines span {
+    display: block;
+
+    width: 100%;
+
+    height: 1px;
+
+    background: #c59a50;
+
+    margin-bottom: 9px;
+}
+
+
+.taste2-lines span:nth-child(2) {
+    width: 70%;
+}
+
+
+.taste2-lines span:nth-child(3) {
+    width: 45%;
+}
+
+
+/* =====================================================
+   BOTTOM DESCRIPTION
+===================================================== */
+
+.taste2-bottom {
+    position: absolute;
+
+    left: 10%;
+
+    bottom: 85px;
+
+    width: 75%;
+
+    border-top: 1px solid #d8d1ca;
+
+    padding-top: 18px;
+}
+
+
+.taste2-bottom p {
+    font-size: 10px;
+
+    line-height: 1.7;
+
+    color: #756c65;
+
+    max-width: 500px;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   PAGE NUMBER
+===================================================== */
+
+.taste2-page-number {
+    position: absolute;
+
+    right: 28px;
+
+    bottom: 18px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 18px;
+
+    color: #aaa39d;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .perfect-taste-2 {
+        min-height: auto;
+
+        padding: 60px 7%;
+
+        display: flex;
+
+        flex-direction: column;
+    }
+
+
+    .taste2-heading,
+    .taste2-main-image,
+    .taste2-info,
+    .taste2-bottom {
+        position: relative;
+
+        left: auto;
+
+        right: auto;
+
+        top: auto;
+
+        bottom: auto;
+
+        width: 100%;
+    }
+
+
+    .taste2-heading {
+        margin-bottom: 35px;
+    }
+
+
+    .taste2-heading h2 {
+        font-size: 52px;
+    }
+
+
+    .taste2-main-image {
+        height: 400px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .taste2-info {
+        height: 300px;
+
+        padding: 45px 35px;
+    }
+
+
+    .taste2-bottom {
+        margin-top: 40px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .perfect-taste-2 {
+        padding: 45px 25px;
+    }
+
+
+    .taste2-heading h2 {
+        font-size: 44px;
+    }
+
+
+    .taste2-main-image {
+        height: 300px;
+    }
+
+
+    .taste2-info {
+        height: 280px;
+
+        padding: 40px 25px;
+    }
+
+}
+/* =====================================================
+   SECTION 12 — PRICE TABLE CAFFECO SLIDE
+===================================================== */
+
+.price-table-section {
+    width: 100%;
+    min-height: 720px;
+
+    background: #f8f6f1;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.price-heading {
+    position: absolute;
+
+    left: 8%;
+
+    top: 110px;
+
+    width: 38%;
+
+    z-index: 5;
+}
+
+
+.price-heading > span {
+    display: block;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    color: #9b7040;
+
+    margin-bottom: 22px;
+}
+
+
+.price-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 59px;
+
+    font-weight: 500;
+
+    line-height: .92;
+
+    color: #241914;
+
+    margin: 0;
+}
+
+
+.price-heading-line {
+    width: 90px;
+
+    height: 1px;
+
+    background: #a47742;
+
+    margin-top: 28px;
+}
+
+
+/* =====================================================
+   PRODUCT CARD
+===================================================== */
+
+.price-product {
+    position: absolute;
+
+    display: flex;
+
+    overflow: hidden;
+
+    height: 180px;
+
+    background: #321b13;
+
+    z-index: 3;
+}
+
+
+/* TOP PRODUCT */
+
+.price-product-top {
+    top: 105px;
+
+    right: 7%;
+
+    width: 48%;
+}
+
+
+/* BOTTOM PRODUCT */
+
+.price-product-bottom {
+    left: 6%;
+
+    top: 395px;
+
+    width: 48%;
+}
+
+
+/* =====================================================
+   PRODUCT IMAGE
+===================================================== */
+
+.price-product-image {
+    width: 38%;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+}
+
+
+.price-product-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =====================================================
+   PRICE BOX
+===================================================== */
+
+.price-box {
+    width: 145px;
+
+    height: 120px;
+
+    background: #f8f6f1;
+
+    color: #241914;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 39px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: absolute;
+
+    left: 25px;
+
+    top: 30px;
+
+    z-index: 4;
+
+    box-shadow: 0 5px 12px rgba(0,0,0,.12);
+}
+
+
+/* =====================================================
+   PRODUCT INFO
+===================================================== */
+
+.price-product-info {
+    padding: 28px 20px;
+
+    color: white;
+
+    margin-left: 20px;
+
+    flex: 1;
+}
+
+
+.price-product-info h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 27px;
+
+    line-height: 1;
+
+    font-weight: 500;
+
+    margin: 0 0 15px;
+}
+
+
+.price-product-info p {
+    max-width: 180px;
+
+    color: #d7cbc3;
+
+    font-size: 9px;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   BUY
+===================================================== */
+
+.buy-text {
+    width: 45px;
+
+    height: 100%;
+
+    border-left: 1px solid rgba(197,154,80,.4);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    writing-mode: vertical-rl;
+
+    color: #c59a50;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    flex-shrink: 0;
+}
+
+
+/* =====================================================
+   EXPORT COFFEE
+===================================================== */
+
+.export-coffee {
+    position: absolute;
+
+    right: 8%;
+
+    bottom: 100px;
+
+    width: 40%;
+
+    padding-left: 25px;
+
+    border-left: 1px solid #c8beb4;
+}
+
+
+.export-coffee h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+
+    font-weight: 500;
+
+    color: #241914;
+
+    margin: 0 0 15px;
+}
+
+
+.export-line {
+    width: 80px;
+
+    height: 1px;
+
+    background: #a47742;
+
+    margin-bottom: 15px;
+}
+
+
+.export-coffee p {
+    max-width: 360px;
+
+    font-size: 10px;
+
+    line-height: 1.8;
+
+    color: #756c65;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   PAGE NUMBER
+===================================================== */
+
+.price-page-number {
+    position: absolute;
+
+    right: 28px;
+
+    bottom: 18px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 18px;
+
+    color: #aaa39d;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .price-heading h2 {
+        font-size: 50px;
+    }
+
+    .price-product-top {
+        width: 52%;
+    }
+
+    .price-product-bottom {
+        width: 52%;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .price-table-section {
+        min-height: auto;
+
+        padding: 60px 7%;
+
+        display: flex;
+
+        flex-direction: column;
+    }
+
+
+    .price-heading,
+    .price-product,
+    .export-coffee {
+        position: relative;
+
+        left: auto;
+
+        right: auto;
+
+        top: auto;
+
+        bottom: auto;
+
+        width: 100%;
+    }
+
+
+    .price-heading {
+        margin-bottom: 40px;
+    }
+
+
+    .price-heading h2 {
+        font-size: 50px;
+    }
+
+
+    .price-product {
+        height: 190px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .price-product-top,
+    .price-product-bottom {
+        top: auto;
+    }
+
+
+    .export-coffee {
+        margin-top: 25px;
+
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .price-table-section {
+        padding: 45px 25px;
+    }
+
+
+    .price-heading h2 {
+        font-size: 43px;
+    }
+
+
+    .price-product {
+        height: 170px;
+    }
+
+
+    .price-product-image {
+        width: 30%;
+    }
+
+
+    .price-box {
+        width: 100px;
+
+        height: 90px;
+
+        left: 15px;
+
+        top: 40px;
+
+        font-size: 29px;
+    }
+
+
+    .price-product-info {
+        padding: 25px 10px;
+
+        margin-left: 15px;
+    }
+
+
+    .price-product-info h3 {
+        font-size: 22px;
+    }
+
+
+    .price-product-info p {
+        font-size: 8px;
+    }
+
+
+    .buy-text {
+        width: 35px;
+    }
+
+
+    .export-coffee {
+        padding-left: 18px;
+    }
+
+
+    .export-coffee h3 {
+        font-size: 26px;
+    }
+
+}
