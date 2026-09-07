@@ -8,6 +8,82 @@ body {
     background: #f4f1ed;
     font-family: "Poppins", sans-serif;
 }
+/* ======================================
+   NAVBAR
+====================================== */
+
+.navbar{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:5px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(45,23,16,.88);
+    backdrop-filter: blur(8px);
+    z-index:999;
+}
+
+.nav-logo{
+    font-family:"Cormorant Garamond", serif;
+    font-size:34px;
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.nav-links{
+    display:flex;
+    gap:35px;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    letter-spacing:1px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#c59a50;
+}
+
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:80px;
+        right:7%;
+        width:220px;
+        background:#2d1710;
+        flex-direction:column;
+        padding:20px;
+        display:none;
+        border-radius:8px;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+}
 
 /* FIRST COVER */
 
@@ -45,7 +121,7 @@ body {
     width: 75px;
     height: 75px;
 
-    border: 2px solid white;
+    border: 2px solid white
     border-radius: 50%;
 
     margin: 0 auto 15px;
@@ -395,10 +471,10 @@ body {
 .story-top-image {
     position: absolute;
 
-    top: 0;
+    top: 5;
     right: 8%;
 
-    width: 48%;
+    width: 40%;
     height: 365px;
 }
 
@@ -419,10 +495,10 @@ body {
 .story-bottom-image {
     position: absolute;
 
-    left: 10%;
+    left 0%;
     top: 350px;
 
-    width: 32%;
+    width: 27%;
     height: 250px;
 
     z-index: 3;
@@ -983,247 +1059,7 @@ body {
 
 
 /* =========================================
-   RESPONSIVE
-========================================= */
 
-@media (max-width: 900px) {
-
-    .perfect-coffee {
-        display: block;
-    }
-
-    .perfect-left,
-    .perfect-right {
-        width: 100%;
-        min-height: 650px;
-    }
-
-    .perfect-tablet {
-        width: 70%;
-        height: 400px;
-        right: 8%;
-    }
-
-    .perfect-card {
-        left: 8%;
-    }
-
-    .perfect-right {
-        padding: 60px 8%;
-    }
-
-    .perfect-heading h2 {
-        font-size: 52px;
-    }
-
-    .perfect-bottom-image {
-        width: 70%;
-        right: 8%;
-    }
-}
-
-
-@media (max-width: 600px) {
-
-    .perfect-left {
-        min-height: 600px;
-    }
-
-    .perfect-tablet {
-        width: 80%;
-        height: 330px;
-        right: 5%;
-        top: 70px;
-    }
-
-    .perfect-card {
-        width: 145px;
-        height: 180px;
-        left: 25px;
-        top: 170px;
-        padding: 25px 15px;
-    }
-
-    .perfect-card h3 {
-        font-size: 20px;
-    }
-
-    .perfect-small-text {
-        left: 25px;
-        bottom: 35px;
-    }
-
-    .perfect-right {
-        min-height: 650px;
-    }
-
-    .perfect-heading h2 {
-        font-size: 48px;
-    }
-
-    .perfect-bottom-image {
-        width: 85%;
-        height: 220px;
-        right: 7.5%;
-        bottom: 35px;
-    }
-}
-/* =========================================
-   SECTION 6 - THE PERFECT COFFEE TASTE
-========================================= */
-
-.perfect-taste {
-    width: 100%;
-    height: 650px;
-    display: grid;
-    grid-template-columns: 52% 48%;
-    background: #f8f6f1;
-    overflow: hidden;
-    position: relative;
-}
-
-
-/* =========================================
-   LEFT WHITE AREA
-========================================= */
-
-.taste-left {
-    position: relative;
-    background: #f8f6f1;
-    padding: 45px 7%;
-    z-index: 2;
-}
-
-.taste-logo {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 15px;
-    color: #321b13;
-    letter-spacing: 1px;
-    margin-bottom: 55px;
-}
-
-.taste-left h2 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 58px;
-    font-weight: 500;
-    line-height: .9;
-    color: #321b13;
-    margin: 0 0 22px;
-}
-
-.taste-description {
-    width: 350px;
-    font-size: 11px;
-    line-height: 1.7;
-    color: #756c65;
-    margin-bottom: 35px;
-}
-
-
-/* =========================================
-   SMALL INFORMATION ROWS
-========================================= */
-
-.taste-feature {
-    width: 360px;
-    min-height: 75px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    border-bottom: 1px solid #ddd6ce;
-    padding: 12px 0;
-}
-
-.taste-feature span {
-    width: 48px;
-    height: 48px;
-    border: 1px solid #c7b9aa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #a47742;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 18px;
-    flex-shrink: 0;
-}
-
-.taste-feature h4 {
-    font-family: "Cormorant Garamond", serif;
-    font-size: 17px;
-    font-weight: 500;
-    color: #321b13;
-    margin: 0 0 4px;
-}
-
-.taste-feature p {
-    font-size: 9px;
-    color: #756c65;
-    margin: 0;
-}
-
-
-/* =========================================
-   RIGHT AREA
-========================================= */
-
-.taste-right {
-    position: relative;
-    background: #f8f6f1;
-    height: 650px;
-    overflow: hidden;
-}
-
-
-/* BROWN RECTANGLE */
-
-.taste-brown-box {
-    position: absolute;
-    right: 0;
-    top: 75px;
-    width: 82%;
-    height: 430px;
-    background: #321b13;
-    z-index: 1;
-}
-
-.taste-number {
-    position: absolute;
-    right: 40px;
-    top: 45px;
-    color: white;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 38px;
-}
-
-.taste-number span {
-    color: #c59a50;
-    font-size: 18px;
-}
-
-.taste-brown-box > p {
-    position: absolute;
-    right: 45px;
-    top: 125px;
-    color: #d8cdc6;
-    font-size: 9px;
-    letter-spacing: 2px;
-    line-height: 1.8;
-}
-
-.taste-lines {
-    position: absolute;
-    right: 45px;
-    top: 205px;
-    width: 100px;
-}
-
-.taste-lines span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #c59a50;
-    margin-bottom: 9px;
-}
 
 
 /* =========================================
@@ -3794,6 +3630,454 @@ body {
 
     .export-coffee h3 {
         font-size: 26px;
+    }
+
+}
+/* ======================================
+   SECTION 11 — DESKTOP FIX
+====================================== */
+
+@media (min-width: 901px) {
+
+    .perfect-taste-2 {
+        position: relative;
+        min-height: 720px;
+        overflow: hidden;
+    }
+
+    .taste2-heading {
+        position: absolute;
+        left: 8%;
+        top: 80px;
+        width: 30%;
+        z-index: 3;
+    }
+
+    .taste2-main-image {
+        position: absolute;
+        left: 31%;
+        top: 30px;
+        width: 42%;
+        height: 530px;
+        z-index: 2;
+    }
+
+    .taste2-main-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .taste2-info {
+        position: absolute;
+        right: 7%;
+        top: 30px;
+        width: 27%;
+        height: 530px;
+        z-index: 1;
+    }
+
+    .taste2-bottom {
+        position: absolute;
+        left: 8%;
+        bottom: 60px;
+        width: 30%;
+        z-index: 3;
+    }
+
+    .taste2-page-number {
+        position: absolute;
+        right: 4%;
+        bottom: 30px;
+    }
+
+}
+/* ======================================
+   MARKETPLACE FINAL VISUAL FIX
+====================================== */
+
+@media (min-width: 901px) {
+
+    /* SECTION 11 */
+
+    .perfect-taste-2 {
+        margin-top: 80px;
+    }
+
+    .taste2-main-image {
+        left: 31%;
+        width: 36%;
+        z-index: 2;
+    }
+
+    .taste2-info {
+        right: 7%;
+        width: 27%;
+        z-index: 3;
+    }
+
+
+    /* SECTION 12 */
+
+    .price-table-section {
+        padding-top: 100px;
+    }
+
+}
+/* SECOND IMAGE - SECTION 10 */
+
+.marketplace-small-image {
+    width: 60%;
+    height: 350px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.marketplace-small-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* ======================================
+   JOURNEY PAGE — MAIN IMAGE FIX
+====================================== */
+
+.story7-main-image {
+    top: 1px !important;
+    height: 600px !important;
+    overflow: hidden;
+}
+
+.story7-main-image img {
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+/* ======================================
+   FIX — SECTION 6 PERFECT COFFEE TASTE
+====================================== */
+
+.perfect-taste {
+    width: 100%;
+    min-height: 720px;
+    background: #f8f6f1;
+
+    display: flex;
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* LEFT SIDE */
+
+.taste-left {
+    width: 45%;
+    min-height: 720px;
+
+    padding: 90px 7%;
+
+    position: relative;
+}
+
+.taste-logo {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
+    margin-bottom: 70px;
+    color: #241914;
+}
+
+.taste-left h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 62px;
+    font-weight: 500;
+    line-height: .9;
+
+    color: #241914;
+
+    margin: 0 0 30px;
+}
+
+.taste-description {
+    max-width: 360px;
+
+    font-size: 12px;
+    line-height: 1.8;
+
+    color: #756c65;
+
+    margin-bottom: 50px;
+}
+
+
+/* FEATURES */
+
+.taste-feature {
+    width: 100%;
+    max-width: 380px;
+
+    display: flex;
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+.taste-feature > span {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 18px;
+
+    color: #9b7040;
+}
+
+.taste-feature h4 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 23px;
+    font-weight: 500;
+
+    color: #241914;
+
+    margin: 0 0 5px;
+}
+
+.taste-feature p {
+    font-size: 10px;
+
+    color: #756c65;
+
+    margin: 0;
+}
+
+
+/* RIGHT SIDE */
+
+.taste-right {
+    width: 55%;
+    height: 720px;
+
+    position: relative;
+
+    background: #321b13;
+
+    overflow: hidden;
+}
+
+
+/* BROWN BOX */
+
+.taste-brown-box {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 42%;
+    height: 330px;
+
+    background: #321b13;
+
+    padding: 70px 40px;
+
+    color: white;
+
+    z-index: 2;
+}
+
+.taste-number {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 58px;
+
+    color: #c59a50;
+
+    margin-bottom: 20px;
+}
+
+.taste-number span {
+    font-size: 20px;
+}
+
+.taste-brown-box p {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    line-height: 1.7;
+
+    color: #d5c8bf;
+}
+
+
+/* LINES */
+
+.taste-lines {
+    display: flex;
+
+    gap: 5px;
+
+    margin-top: 35px;
+}
+
+.taste-lines span {
+    display: block;
+
+    width: 35px;
+    height: 1px;
+
+    background: #c59a50;
+}
+
+
+/* MAIN IMAGE */
+
+.taste-main-image {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 72%;
+    height: 600px;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+.taste-main-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* GOLD BOX */
+
+.taste-gold-box {
+    position: absolute;
+
+    right: 0;
+    bottom: 0;
+
+    width: 150px;
+    height: 150px;
+
+    background: #c59a50;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 35px;
+
+    z-index: 3;
+}
+
+
+/* PAGE NUMBER */
+
+.taste-page-number {
+    position: absolute;
+
+    right: 25px;
+    bottom: 20px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 18px;
+
+    color: #aaa39d;
+
+    z-index: 5;
+}
+
+
+/* ======================================
+   MOBILE
+====================================== */
+
+@media (max-width: 900px) {
+
+    .perfect-taste {
+        min-height: auto;
+
+        display: block;
+    }
+
+    .taste-left {
+        width: 100%;
+        min-height: 600px;
+
+        padding: 50px 8%;
+    }
+
+    .taste-left h2 {
+        font-size: 52px;
+    }
+
+    .taste-right {
+        width: 100%;
+        height: 650px;
+    }
+
+    .taste-main-image {
+        width: 75%;
+        height: 500px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .taste-left {
+        padding: 45px 25px;
+    }
+
+    .taste-left h2 {
+        font-size: 44px;
+    }
+
+    .taste-right {
+        height: 550px;
+    }
+
+    .taste-main-image {
+        width: 100%;
+        height: 420px;
+    }
+
+    .taste-brown-box {
+        width: 55%;
+        height: 250px;
+
+        padding: 40px 25px;
+    }
+
+    .taste-number {
+        font-size: 42px;
+    }
+
+}
+/* ======================================
+   EXPERIENCE PAGE — IMAGE SIZE FIX
+====================================== */
+
+@media (min-width: 901px) {
+
+    .taste-main-image {
+        width: 68%;
+        height: 500px;
+        left: 0;
+        bottom: 0;
     }
 
 }
