@@ -21,9 +21,9 @@ body {
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:rgba(45,23,16,.88);
+    background:rgba(245, 245, 245, 0.88);
     backdrop-filter: blur(8px);
-    z-index:999;
+    z-index: index 500;;
 }
 
 .nav-logo{
@@ -71,7 +71,7 @@ body {
         position:absolute;
         top:80px;
         right:7%;
-        width:220px;
+        width: 220px;px;
         background:#2d1710;
         flex-direction:column;
         padding:20px;
@@ -92,7 +92,7 @@ body {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background: #2d1710;
+    background: #f8f7f6;
 }
 
 .cover img {
@@ -104,7 +104,7 @@ body {
 .cover-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(35, 17, 11, 0.55);
+    background: rgba(245, 245, 245, 0.55);
 }
 
 .cover-content {
@@ -5102,64 +5102,184 @@ body {
     }
 }
 /* ======================================
-   FINAL FIX — EXPORT COFFEE BESIDE CARD
+   NAVBAR — REMOVE BROWN BACKGROUND
 ====================================== */
 
-@media (min-width: 801px) {
+.navbar {
+    background: transparent !important;
+    box-shadow: none !important;
+}
 
-    .export-coffee {
+.nav-logo,
+.nav-links a {
+    color: #ffffff !important;
+}
+/* =========================================
+   NAVBAR — TRANSPARENT
+   REMOVE ALL BACKGROUND
+========================================= */
+
+.navbar {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+}
+
+.navbar::before,
+.navbar::after {
+    display: none !important;
+    background: transparent !important;
+}
+
+.nav-logo,
+.nav-links a {
+    background: transparent !important;
+}
+.nav-logo,
+.nav-links a {
+    color: #ffffff !important;
+}
+/* =========================================
+   HAMBURGER MENU
+========================================= */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
+}
+
+/* MOBILE MENU */
+@media (max-width: 900px) {
+
+    .menu-toggle {
+        display: block;
         position: absolute;
-
-        right: 8%;
-        top: 435px;
-
-        width: 40%;
-
-        padding-left: 35px;
-
-        border-left: 1px solid #c8beb4;
-
-        box-sizing: border-box;
-
-        z-index: 5;
+        right: 30px;
+        top: 22px;
     }
 
-    .export-coffee h3 {
-        font-family: "Cormorant Garamond", serif;
-
-        font-size: 34px;
-
-        line-height: 1;
-
-        font-weight: 500;
-
-        color: #241914;
-
-        margin: 0 0 18px;
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 25px;
+        width: 220px;
+        background: #321b13;
+        padding: 20px 0;
+        flex-direction: column;
+        z-index: 1000;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
 
-    .export-line {
-        width: 80px;
-
-        height: 1px;
-
-        background: #a47742;
-
-        margin-bottom: 18px;
+    .nav-links.active {
+        display: flex;
     }
 
-    .export-coffee p {
-        max-width: 430px;
-
-        font-family: "Poppins", sans-serif;
-
-        font-size: 11px;
-
-        line-height: 1.8;
-
-        color: #756c65;
-
-        margin: 0;
+    .nav-links a {
+        display: block;
+        padding: 13px 25px;
+        color: #ffffff !important;
+        text-decoration: none;
     }
 
+    .nav-links a:hover {
+        background: rgba(255,255,255,0.08);
+    }
+}
+/* =========================================
+   CAFFECO — SHORT BROWN NAVBAR
+========================================= */
+
+.navbar {
+    height: 55px !important;
+    min-height: 55px !important;
+    padding: 0 7% !important;
+    background: #2f1b14 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    box-sizing: border-box;
+}
+
+/* Logo */
+.nav-logo {
+    color: #ffffff !important;
+    font-size: 28px !important;
+    text-decoration: none;
+}
+
+/* Menu links */
+.nav-links {
+    display: flex !important;
+    align-items: center;
+    gap: 42px;
+    margin-left: auto;
+}
+
+.nav-links a {
+    color: #ffffff !important;
+    font-size: 15px;
+    text-decoration: none;
+    background: transparent !important;
+}
+
+/* Hide hamburger on desktop */
+.menu-toggle {
+    display: none !important;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .menu-toggle {
+        display: block !important;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        color: #ffffff !important;
+        background: transparent !important;
+        border: none !important;
+        font-size: 27px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none !important;
+    }
+
+    .nav-links.active {
+        display: flex !important;
+        position: absolute;
+        top: 72px;
+        right: 20px;
+        width: 220px;
+        padding: 15px 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: #321b13 !important;
+    }
+
+    .nav-links.active a {
+        padding: 13px 22px;
+    }
 }
