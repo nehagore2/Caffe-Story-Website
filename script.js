@@ -28,11 +28,3 @@ contactForm.addEventListener("submit", function(event) {
     contactForm.reset();
 
 });
-const menuToggle = document.getElementById("menuToggle");
-const nav = document.getElementById("nav");
-
-if (menuToggle && nav) {
-    menuToggle.addEventListener("click", () => {
-        nav.classList.toggle("active");
-    });
-}
