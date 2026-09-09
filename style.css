@@ -5283,3 +5283,419 @@ body {
         padding: 13px 22px;
     }
 }
+/* =====================================================
+   FULL SCROLL WEBSITE (Cars Style)
+===================================================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+/* Navbar Animation */
+
+.navbar{
+    transition:.4s ease;
+    background:rgba(34,22,17,.15);
+    backdrop-filter:blur(12px);
+}
+
+.navbar.scrolled{
+    background:#2d1710;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+/* Logo */
+
+.nav-logo{
+    color:#fff !important;
+    font-size:32px;
+}
+
+/* Menu */
+
+.nav-links a{
+    position:relative;
+    color:#fff !important;
+    font-weight:500;
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0%;
+    height:2px;
+    background:#c59a50;
+    transition:.35s;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after{
+    width:100%;
+}
+
+.nav-links a.active{
+    color:#d7a553 !important;
+}
+
+/* Every section becomes fullscreen like Cars website */
+
+section{
+    scroll-margin-top:90px;
+}
+
+/* Smooth entrance */
+
+section{
+    animation:fadeUp .8s ease both;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Better spacing between sections */
+
+.story-section,
+.coffee-story-2,
+.perfect-coffee,
+.coffee-story-section,
+.coffee-moment-section,
+.ingredients-section,
+.marketplace-section{
+    border-top:12px solid #f4f1ed;
+}
+
+/* Mobile menu */
+
+@media(max-width:768px){
+
+.navbar{
+    padding:15px 7%;
+}
+
+.nav-links{
+    top:70px;
+    right:20px;
+    width:230px;
+    background:#2d1710;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.nav-links a{
+    padding:10px 0;
+}
+
+}
+/* =====================================================
+   CAFFECO — SINGLE PAGE SCROLL FIX
+   Keeps existing design and layout
+===================================================== */
+
+/* Allow the complete website to scroll */
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Keep navbar above all sections */
+.navbar {
+    z-index: 9999;
+}
+
+/* Give sections their own space in the single page */
+.cover,
+.coffee-experience,
+.story-section,
+.coffee-story-2,
+.perfect-coffee,
+.perfect-taste,
+.coffee-story-section,
+.coffee-moment-section,
+.ingredients-section,
+.marketplace-section,
+.perfect-taste-2,
+.price-table-section {
+    position: relative;
+    flex-shrink: 0;
+}
+
+/* Navbar anchor offset */
+section {
+    scroll-margin-top: 70px;
+}
+
+/* =====================================================
+   NAVBAR — SINGLE PAGE LINKS
+===================================================== */
+
+.nav-links a {
+    cursor: pointer;
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+
+    .nav-links {
+        z-index: 10000;
+    }
+
+}
+/* =====================================================
+   COFFEE STORY 2 — UI ADJUSTMENT ONLY
+   This affects ONLY the coffee-story-2 section
+===================================================== */
+
+.coffee-story-2 {
+    min-height: 680px;
+    padding: 60px 8%;
+}
+
+/* Heading */
+.coffee-story-2 .story2-heading {
+    left: 14%;
+    top: 70px;
+    width: 32%;
+}
+
+.coffee-story-2 .story2-heading h2 {
+    font-size: 62px;
+    line-height: 0.92;
+}
+
+/* Description */
+.coffee-story-2 .story2-description {
+    top: 80px;
+    left: 47%;
+    width: 39%;
+    padding-left: 30px;
+}
+
+/* Main image */
+.coffee-story-2 .story2-main-image {
+    left: 8%;
+    bottom: 45px;
+    width: 43%;
+    height: 330px;
+}
+
+/* Small images */
+.coffee-story-2 .story2-small-image {
+    width: 170px;
+}
+
+.coffee-story-2 .story2-small-image img {
+    height: 190px;
+}
+
+.coffee-story-2 .story2-small-one {
+    right: 24%;
+    top: 270px;
+}
+
+.coffee-story-2 .story2-small-two {
+    right: 8%;
+    top: 270px;
+}
+
+
+/* =====================================================
+   MOBILE — ONLY THIS SECTION
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .coffee-story-2 {
+        min-height: auto;
+        padding: 50px 6%;
+    }
+
+    .coffee-story-2 .story2-heading,
+    .coffee-story-2 .story2-description,
+    .coffee-story-2 .story2-main-image,
+    .coffee-story-2 .story2-small-image {
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        width: 100%;
+    }
+
+    .coffee-story-2 .story2-heading {
+        margin-bottom: 25px;
+    }
+
+    .coffee-story-2 .story2-heading h2 {
+        font-size: 52px;
+    }
+
+    .coffee-story-2 .story2-description {
+        margin-bottom: 30px;
+    }
+
+    .coffee-story-2 .story2-main-image {
+        height: 330px;
+        margin-bottom: 25px;
+    }
+
+    .coffee-story-2 .story2-small-image {
+        margin-bottom: 25px;
+    }
+
+    .coffee-story-2 .story2-small-image img {
+        height: 210px;
+    }
+}
+/* =====================================================
+   COLLECTION / INGREDIENTS — UI ADJUSTMENT ONLY
+===================================================== */
+
+.ingredients-section {
+    min-height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ingredients-section .ingredients-heading {
+    top: 60px;
+}
+
+.ingredients-section .ingredients-gallery {
+    transform: scale(0.92);
+    transform-origin: center;
+}
+
+.ingredients-section .ingredients-info {
+    right: 7%;
+}
+/* =====================================================
+   PAGE 22 — PERFECT COFFEE
+   UI ADJUSTMENT ONLY
+===================================================== */
+
+.perfect-coffee {
+    min-height: 700px;
+}
+
+/* Left brown area */
+.perfect-coffee .perfect-left {
+    width: 46%;
+}
+
+/* Tablet image */
+.perfect-coffee .perfect-tablet {
+    transform: scale(0.92);
+    transform-origin: center;
+}
+
+/* Small text */
+.perfect-coffee .perfect-small-text {
+    padding-left: 8%;
+}
+
+/* Right white area */
+.perfect-coffee .perfect-right {
+    width: 54%;
+}
+
+/* Heading */
+.perfect-coffee .perfect-heading {
+    padding-left: 5%;
+}
+
+/* Bottom coffee image */
+.perfect-coffee .perfect-bottom-image {
+    transform: scale(0.94);
+    transform-origin: center;
+}
+/* =====================================================
+   PAGE 25 — PERFECT COFFEE TASTE
+   UI ADJUSTMENT ONLY
+===================================================== */
+
+.perfect-taste {
+    min-height: 700px;
+    overflow: hidden;
+}
+
+/* Left content */
+.perfect-taste .taste-left {
+    padding-left: 8%;
+    padding-top: 6%;
+}
+
+/* Main right area */
+.perfect-taste .taste-right {
+    transform: scale(0.94);
+    transform-origin: center;
+}
+
+/* Main coffee image */
+.perfect-taste .taste-main-image {
+    transform: scale(0.96);
+    transform-origin: center;
+}
+
+/* Brown information box */
+.perfect-taste .taste-brown-box {
+    transform: scale(0.94);
+    transform-origin: center;
+}
+
+/* Gold coffee box */
+.perfect-taste .taste-gold-box {
+    transform: scale(0.92);
+    transform-origin: center;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .perfect-taste {
+        min-height: auto;
+    }
+
+    .perfect-taste .taste-left {
+        padding-left: 6%;
+        padding-top: 40px;
+    }
+
+    .perfect-taste .taste-right {
+        transform: none;
+    }
+
+    .perfect-taste .taste-main-image,
+    .perfect-taste .taste-brown-box,
+    .perfect-taste .taste-gold-box {
+        transform: none;
+    }
+
+}
