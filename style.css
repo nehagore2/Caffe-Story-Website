@@ -5699,3 +5699,305 @@ section {
     }
 
 }
+/* =====================================================
+   MOBILE VIEW — FINAL UI FIX
+   Desktop design remains unchanged
+===================================================== */
+
+@media (max-width: 800px) {
+
+    /* Page background */
+    body {
+        background: #ffffff;
+    }
+
+    /* Keep sections clean and white where the reference is white */
+    .coffee-story-2,
+    .perfect-coffee,
+    .perfect-taste {
+        background: #ffffff;
+    }
+
+    /* Prevent horizontal overflow */
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Navbar */
+    .navbar {
+        width: 100%;
+        padding: 14px 20px;
+    }
+
+    .nav-links {
+        width: 100%;
+        background: #321b13;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 14px 20px;
+    }
+
+    /* Images stay inside mobile screen */
+    img {
+        max-width: 100%;
+    }
+
+    /* Sections fit mobile width */
+    .cover,
+    .coffee-experience,
+    .coffee-story-section,
+    .coffee-moment-section,
+    .story-section,
+    .ingredients-section,
+    .marketplace-section,
+    .coffee-story-2,
+    .perfect-coffee,
+    .perfect-taste,
+    .perfect-taste-2,
+    .price-table-section {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+}
+/* =====================================================
+   PAGE 07 — 8,236 STORY NUMBER FIX
+===================================================== */
+
+.coffee-moment-section .moment-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 110px;
+    height: 110px;
+
+    font-size: 30px;
+    line-height: 1;
+    color: #c9a15a;
+
+    border: 1px solid #c9a15a;
+    border-radius: 50%;
+
+    position: relative;
+    z-index: 5;
+
+    visibility: visible;
+    opacity: 1;
+}
+/* PAGE 07 — Story label visibility fix */
+.coffee-moment-section .moment-label {
+    display: block;
+    color: #e0b785;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    opacity: 1;
+}
+/* =====================================================
+   PAGE 23 — RIGHT BROWN BOX CONTENT
+===================================================== */
+
+.taste2-info {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28%;
+    height: 100%;
+    background: #3a1f17;
+    padding: 85px 55px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.taste2-info strong {
+    display: block;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.taste2-info strong span {
+    color: #c99a4a;
+    font-size: 24px;
+}
+
+.taste2-info p {
+    font-size: 13px;
+    line-height: 1.8;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin: 0 0 35px;
+}
+
+/* Paragraph INSIDE brown box */
+.taste2-info::after {
+    content: "Discover a perfect coffee experience where great taste, quality and memorable moments come together.";
+    display: block;
+    max-width: 250px;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0;
+    color: #e8ddd7;
+    margin-top: 35px;
+}
+
+/* Hide the old paragraph outside the box */
+.taste2-bottom {
+    display: none;
+}
+/* =====================================================
+   PAGE 23 — PERFECT COFFEE TASTE FINAL ALIGNMENT
+===================================================== */
+
+.perfect-taste-2 {
+    position: relative;
+    min-height: 690px;
+    background: #f8f6f1;
+    overflow: hidden;
+}
+
+/* LEFT HEADING */
+.taste2-heading {
+    position: absolute;
+    left: 8%;
+    top: 85px;
+    width: 330px;
+    z-index: 5;
+}
+
+.taste2-heading span {
+    display: block;
+    margin-bottom: 38px;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #b48a4b;
+}
+
+.taste2-heading h2 {
+    margin: 0;
+    font-size: 62px;
+    line-height: 0.95;
+    font-weight: 400;
+    color: #321b14;
+}
+
+.taste2-heading p {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 330px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #766b65;
+}
+
+/* CENTER IMAGE */
+.taste2-main-image {
+    position: absolute;
+    left: 31%;
+    top: 22px;
+    width: 37%;
+    height: 665px;
+    z-index: 2;
+}
+
+.taste2-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* RIGHT BROWN BOX */
+.taste2-info {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28%;
+    height: 100%;
+    background: #3a1f17;
+    padding: 85px 55px;
+    box-sizing: border-box;
+    color: white;
+    z-index: 3;
+}
+
+.taste2-info strong {
+    display: block;
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.taste2-info strong span {
+    color: #c99a4a;
+    font-size: 22px;
+}
+
+.taste2-info p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.8;
+    letter-spacing: 3px;
+    color: white;
+}
+
+/* GOLD LINES */
+.taste2-lines {
+    margin-top: 38px;
+}
+
+.taste2-lines span {
+    display: block;
+    height: 2px;
+    background: #b9914d;
+    margin-bottom: 10px;
+}
+
+.taste2-lines span:nth-child(1) {
+    width: 135px;
+}
+
+.taste2-lines span:nth-child(2) {
+    width: 95px;
+}
+
+.taste2-lines span:nth-child(3) {
+    width: 60px;
+}
+
+/* RIGHT BOX PARAGRAPH */
+.taste2-info::after {
+    content: "Discover a perfect coffee experience where great taste, quality and memorable moments come together.";
+    display: block;
+    width: 50px;
+    margin-top: 45px;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0;
+    color: #e8ddd7;
+}
+
+/* HIDE OLD OUTSIDE PARAGRAPH */
+.taste2-bottom {
+    display: none;
+}
+
+/* PAGE NUMBER */
+.taste2-page-number {
+    position: bottom;
+    right: 0%;
+    bottom: 200px;
+    font-size: 13px;
+    color: #9d938d;
+    z-index:10;
+}
