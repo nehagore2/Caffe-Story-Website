@@ -6001,3 +6001,320 @@ section {
     color: #9d938d;
     z-index:10;
 }
+/* =========================================
+   CAFFECO — ANIMATIONS & TRANSITIONS
+   ========================================= */
+
+/* Smooth page scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* -------------------------------
+   SECTION REVEAL
+-------------------------------- */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* -------------------------------
+   HEADINGS
+-------------------------------- */
+
+section h1,
+section h2 {
+    transition:
+        transform 0.7s ease,
+        opacity 0.7s ease;
+}
+
+/* -------------------------------
+   IMAGES
+-------------------------------- */
+
+section img {
+    transition:
+        transform 0.8s ease,
+        opacity 0.8s ease;
+}
+
+section img:hover {
+    transform: scale(1.03);
+}
+
+/* -------------------------------
+   LINKS / BUTTONS
+-------------------------------- */
+
+section a {
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease,
+        background-color 0.3s ease;
+}
+
+section a:hover {
+    transform: translateY(-2px);
+}
+
+/* -------------------------------
+   NAVBAR
+-------------------------------- */
+
+nav a {
+    transition:
+        color 0.3s ease,
+        opacity 0.3s ease;
+}
+
+nav a:hover {
+    opacity: 0.65;
+}
+
+/* -------------------------------
+   COFFEE NUMBERS / STATS
+-------------------------------- */
+
+.story-percent,
+.moment-circle,
+.taste2-info strong,
+.marketplace-discount span {
+    transition:
+        transform 0.5s ease,
+        opacity 0.5s ease;
+}
+
+.story-percent:hover,
+.moment-circle:hover,
+.taste2-info strong:hover,
+.marketplace-discount span:hover {
+    transform: scale(1.05);
+}
+
+/* -------------------------------
+   REDUCED MOTION
+-------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+/* =========================================
+   CAFFECO — PHASE 2 ANIMATIONS
+   ========================================= */
+
+/* -----------------------------------------
+   HEADINGS FADE + SLIDE
+----------------------------------------- */
+
+.reveal.show h1,
+.reveal.show h2 {
+    animation: headingReveal 0.9s ease forwards;
+}
+
+@keyframes headingReveal {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* -----------------------------------------
+   SECTION IMAGES — GENTLE ENTRANCE
+----------------------------------------- */
+
+.reveal img {
+    opacity: 0;
+    transform: scale(0.96);
+}
+
+.reveal.show img {
+    animation: imageReveal 1s ease forwards;
+}
+
+@keyframes imageReveal {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* -----------------------------------------
+   PARAGRAPH REVEAL
+----------------------------------------- */
+
+.reveal.show p {
+    animation: textReveal 0.8s ease 0.15s both;
+}
+
+@keyframes textReveal {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* -----------------------------------------
+   MARKETPLACE PRODUCTS
+----------------------------------------- */
+
+.marketplace-product {
+    opacity: 0;
+    transform: translateY(25px);
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease;
+}
+
+.marketplace-section.reveal.show .marketplace-product {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.marketplace-section.reveal.show .marketplace-product:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.marketplace-section.reveal.show .marketplace-product:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+
+/* -----------------------------------------
+   SMALL IMAGES / STORY CARDS
+----------------------------------------- */
+
+.story2-small-image {
+    transition:
+        transform 0.6s ease,
+        opacity 0.6s ease;
+}
+
+.story2-small-image:hover {
+    transform: translateY(-6px);
+}
+
+
+/* -----------------------------------------
+   STAT NUMBERS
+----------------------------------------- */
+
+.story-percent,
+.moment-circle,
+.taste2-info strong,
+.marketplace-discount span {
+    transition:
+        transform 0.4s ease,
+        letter-spacing 0.4s ease;
+}
+
+.story-percent:hover,
+.moment-circle:hover,
+.taste2-info strong:hover,
+.marketplace-discount span:hover {
+    transform: scale(1.06);
+    letter-spacing: 1px;
+}
+
+
+/* -----------------------------------------
+   LINKS / BUTTONS
+----------------------------------------- */
+
+a {
+    transition:
+        transform 0.35s ease,
+        opacity 0.35s ease,
+        letter-spacing 0.35s ease;
+}
+
+a:hover {
+    transform: translateX(4px);
+}
+
+
+/* -----------------------------------------
+   COVER ENTRANCE
+----------------------------------------- */
+
+.cover.reveal.show h1 {
+    animation: coverTitle 1.1s ease forwards;
+}
+
+.cover.reveal.show p {
+    animation: coverText 1s ease 0.25s both;
+}
+
+@keyframes coverTitle {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes coverText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* -----------------------------------------
+   REDUCED MOTION
+----------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+
+}
