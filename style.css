@@ -1239,7 +1239,7 @@ body {
     position: absolute;
     left: 7%;
     bottom: 2px;
-    color: white;
+    color: rgb(6, 6, 6);
     z-index: 5;
 }
 
@@ -1998,7 +1998,7 @@ body {
 
     display: block;
 
-    color: #f6f4f1;
+    color: #321b13;
 
     font-family: "Poppins", sans-serif;
 
@@ -2035,16 +2035,11 @@ body {
 
 .moment-info p {
     max-width: 350px;
-
     color: #756c65;
-
     font-family: "Poppins", sans-serif;
-
     font-size: 11px;
-
     line-height: 1.8;
-
-    margin: 0;
+    margin: -8px 0 0;
 }
 
 
@@ -2056,11 +2051,10 @@ body {
     content: "The Story of Coffee\A\A Every coffee moment is different. From the first sip to the final moment, coffee brings people together.";
 
     white-space: pre-line;
-
     position: absolute;
 
     left: 45px;
-    bottom: 170px;
+    bottom: 155px;
 
     width: 260px;
     height: 155px;
@@ -2074,12 +2068,8 @@ body {
     color: #ffffff;
 
     font-family: "Poppins", sans-serif;
-
     font-size: 10px;
-
     line-height: 1.8;
-
-    z-index: 8;
 }
 
 
@@ -3849,7 +3839,7 @@ body {
 .export-coffee {
     position: absolute;
 
-    right: 8%;
+    right: 7%;
 
     bottom: 100px;
 
