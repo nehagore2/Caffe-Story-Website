@@ -1,38 +1,55 @@
-const menuToggle = document.getElementById("menuToggle");
-const nav = document.getElementById("nav");
-
-menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
-});
-
-
-const navLinks = document.querySelectorAll("#nav a");
-
-navLinks.forEach(link => {
-
-    link.addEventListener("click", () => {
-        nav.classList.remove("active");
-    });
-
-});
-
-
-const contactForm = document.getElementById("contactForm");
-
-contactForm.addEventListener("submit", function(event) {
-
-    event.preventDefault();
-
-    alert("Thank you for contacting Caffeco!");
-
-    contactForm.reset();
-
-});
 /* =========================================
-   CAFFECO — SCROLL REVEAL ANIMATION
+   CAFFECO — MAIN JAVASCRIPT
    ========================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    /* =========================================
+       MOBILE MENU
+       ========================================= */
+
+    const menuToggle = document.getElementById("menuToggle");
+    const nav = document.getElementById("nav");
+
+    if (menuToggle && nav) {
+
+        menuToggle.addEventListener("click", () => {
+            nav.classList.toggle("active");
+        });
+
+        const navLinks = document.querySelectorAll("#nav a");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("active");
+            });
+        });
+    }
+
+
+    /* =========================================
+       CONTACT FORM
+       ========================================= */
+
+    const contactForm = document.getElementById("contactForm");
+
+    if (contactForm) {
+
+        contactForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            alert("Thank you for contacting Caffeco!");
+
+            contactForm.reset();
+
+        });
+    }
+
+
+    /* =========================================
+       SCROLL REVEAL ANIMATION
+       ========================================= */
 
     const sections = document.querySelectorAll("section");
 
@@ -42,14 +59,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const observer = new IntersectionObserver(
         (entries) => {
+
             entries.forEach(entry => {
 
                 if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
-                    observer.unobserve(entry.target);
 
+                    entry.target.classList.add("show");
+
+                    observer.unobserve(entry.target);
                 }
+
             });
+
         },
         {
             threshold: 0.15
@@ -60,12 +81,10 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(section);
     });
 
-});
-/* =========================================
-   CAFFECO — STAT NUMBER ANIMATION
-   ========================================= */
 
-document.addEventListener("DOMContentLoaded", () => {
+    /* =========================================
+       STAT NUMBER ANIMATION
+       ========================================= */
 
     const counters = document.querySelectorAll(
         ".story-percent, .moment-circle, .taste2-info strong, .marketplace-discount span"
@@ -79,7 +98,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!match) return;
 
-        const target = parseInt(match[0].replace(/,/g, ""), 10);
+        const target = parseInt(
+            match[0].replace(/,/g, ""),
+            10
+        );
 
         let suffix = "";
 
@@ -100,7 +122,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     if (!entry.isIntersecting) return;
 
-                    let start = 0;
                     const duration = 1200;
                     const startTime = performance.now();
 
@@ -122,8 +143,11 @@ document.addEventListener("DOMContentLoaded", () => {
                             currentValue.toLocaleString() + suffix;
 
                         if (progress < 1) {
+
                             requestAnimationFrame(updateNumber);
+
                         } else {
+
                             counter.textContent =
                                 target.toLocaleString() + suffix;
                         }
@@ -141,7 +165,6 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 
         numberObserver.observe(counter);
-
     });
 
 });

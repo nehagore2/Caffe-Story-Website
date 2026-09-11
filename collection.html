@@ -1,244 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Caffeco | Coffee Collection</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Caffeco | Coffee Story</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 </head>
-
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+<a class="nav-logo" href="index.html">
+        Caffeco
+    </a>
+<button class="menu-toggle" id="menuToggle">
+        ☰
+    </button>
+<div class="nav-links" id="nav">
+<a href="index.html">Home</a>
+<a href="experience.html">Experience</a>
+<a href="journey.html">Journey</a>
+<a href="story.html">Story</a>
+<a href="collection.html">Collection</a>
+<a href="marketplace.html">Marketplace</a>
+</div>
+</nav>
 
-    <nav class="navbar">
-
-        <a href="index.html" class="nav-logo">
-            Caffeco
-        </a>
-
-        <button class="menu-toggle" id="menuToggle">
-            ☰
-        </button>
-
-        <div class="nav-links" id="nav">
-
-            <a href="index.html">Home</a>
-            <a href="story.html">Story</a>
-            <a href="experience.html">Experience</a>
-            <a href="journey.html">Journey</a>
-            <a href="collection.html">Collection</a>
-            <a href="marketplace.html">Marketplace</a>
-
-        </div>
-
-    </nav>
-
-
-    <!-- =====================================================
-         SECTION 9 — INGREDIENTS COFFEE
-    ===================================================== -->
-
-    <section class="ingredients-section">
-
-        <!-- TOP HEADING -->
-
-        <div class="ingredients-heading">
-
-            <span>09 — COFFEE COLLECTION</span>
-
-            <h2>
-                The Story of Coffee
-            </h2>
-
-        </div>
-
-
-        <!-- COFFEE IMAGE COLLAGE -->
-
-        <div class="ingredients-gallery">
-
-            <div class="ingredient-img ingredient-img-one">
-
-                <img src="images/coffee-cups.jpg" alt="Coffee cup">
-
-            </div>
-
-            <div class="ingredient-img ingredient-img-two">
-
-                <img src="images/latte-cup.jpg"
-                     alt="Latte coffee">
-
-            </div>
-
-            <div class="ingredient-img ingredient-img-three">
-
-                <img src="images/coffee-test.jpg"
-                     alt="Coffee drink">
-
-            </div>
-
-            <div class="ingredient-img ingredient-img-four">
-
-                <img src="images/coffee-food.jpg"
-                     alt="Coffee and food">
-
-            </div>
-
-        </div>
-
-
-        <!-- RIGHT INFORMATION -->
-
-        <div class="ingredients-info">
-
-            <span class="ingredients-label">
-                INGREDIENTS COFFEE
-            </span>
-
-            <p>
-                Great coffee starts with carefully
-                selected ingredients. From fresh
-                coffee beans to milk and natural
-                flavours, every element plays a role
-                in creating a memorable cup.
-            </p>
-
-
-            <!-- CIRCULAR ICONS -->
-
-            <div class="ingredient-icons">
-
-                <div class="ingredient-icon">
-                    <span>☕</span>
-                </div>
-
-                <div class="ingredient-icon">
-                    <span>◯</span>
-                </div>
-
-                <div class="ingredient-icon">
-                    <span>✦</span>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-<!-- =====================================================
-     SECTION 10 — MARKETPLACE
-===================================================== -->
-
-<section class="marketplace-section">
-
-    <!-- LEFT PHONE IMAGE -->
-    <div class="marketplace-image">
-        <img src="images/coffee-mobile.png" alt="Coffee product">
-    </div>
-
-
-    <!-- RIGHT WHITE CONTENT -->
-    <div class="marketplace-content">
-
-        <span class="marketplace-label">
-            10 — COFFEE MARKETPLACE
+<section class="ingredients-section" id="collection">
+<div class="ingredients-heading">
+<span>
+            13 — THE STORY OF COFFEE
         </span>
-
-        <h2>
-            Discover<br>
-            Your Coffee
+<h2>
+            The Story of Coffee
         </h2>
-
-        <p class="marketplace-description">
-            Explore our carefully selected coffee collection and discover
-            flavours made for every coffee moment.
+</div>
+<div class="ingredients-gallery">
+<div class="ingredient-img ingredient-img-one">
+<img alt="Coffee cups" src="images/coffee-cups.jpg"/>
+</div>
+<div class="ingredient-img ingredient-img-two">
+<img alt="Coffee cup" src="images/latte-cup.jpg"/>
+</div>
+<div class="ingredient-img ingredient-img-three">
+<img alt="Iced coffee" src="images/coffee-test.jpg"/>
+</div>
+<div class="ingredient-img ingredient-img-four">
+<img alt="Coffee and food" src="images/coffee-food.jpg"/>
+</div>
+</div>
+<div class="ingredients-info">
+<span class="ingredients-label">
+            INGREDIENTS COFFEE
+        </span>
+<p>
+            Great coffee starts with carefully selected
+            ingredients. From fresh coffee beans to milk
+            and natural flavours, every element plays a
+            role in creating a memorable cup.
         </p>
-
-        <a href="#" class="marketplace-button">
-            EXPLORE COLLECTION ↗
-        </a>
-
-
-        <!-- TWO PRODUCT CARDS -->
-        <div class="marketplace-products">
-
-            <div class="marketplace-product">
-
-                <div class="product-icon">
-                    <span>◉</span>
-                </div>
-
-                <div class="product-divider"></div>
-
-                <strong>$18</strong>
-
-            </div>
-
-
-            <div class="marketplace-product">
-
-                <div class="product-icon">
-                    <span>◉</span>
-                </div>
-
-                <div class="product-divider"></div>
-
-                <strong>$18</strong>
-
-            </div>
-
-        </div>
-
+<div class="ingredient-icons">
+<div class="ingredient-icon">
+<span>☕</span>
+</div>
+<div class="ingredient-icon">
+<span>◯</span>
+</div>
+<div class="ingredient-icon">
+<span>✦</span>
+</div>
+</div>
+</div>
+<div class="ingredients-page-number">
+        13
     </div>
-
-
-    <!-- FULL BROWN BOTTOM AREA -->
-    <div class="marketplace-bottom">
-
-        <!-- 50% CIRCLE -->
-        <div class="marketplace-discount">
-            <span>50%</span>
-        </div>
-
-
-        <!-- BOTTOM TEXT -->
-        <div class="marketplace-bottom-text">
-
-            <p>
-                From classic espresso to refreshing cold brews, our
-                marketplace offers a wide range of coffee choices
-                for every taste. Find your favourite and make every
-                cup a special one.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <!-- PAGE NUMBER -->
-    <div class="marketplace-page-number">
-        10
-    </div>
-
 </section>
 
+<section class="price-table-section">
+<div class="price-heading">
+<span>
+            12 — CAFFECO COLLECTION
+        </span>
+<h2>
+            Price Table<br/>
+            Caffeco Slide
+        </h2>
+<div class="price-heading-line"></div>
+</div>
+<div class="price-product price-product-top">
+<div class="price-product-image">
+<img alt="Brazilian coffee" src="images/coffee-product.jpg"/>
+</div>
+<div class="price-box">
+            $ 94
+        </div>
+<div class="price-product-info">
+<h3>
+                Brazilian<br/>
+                Coffee
+            </h3>
+<p>
+                Rich aroma and smooth
+                roasted coffee flavour.
+            </p>
+</div>
+<div class="buy-text">
+            BUY
+        </div>
+</div>
+<div class="price-product price-product-bottom">
+<div class="price-product-image">
+<img alt="Indonesian coffee" src="images/coffee-beans.jpg"/>
+</div>
+<div class="price-box">
+            $ 89
+        </div>
+<div class="price-product-info">
+<h3>
+                Indonesian<br/>
+                Coffee
+            </h3>
+<p>
+                Deep flavour with a
+                balanced coffee aroma.
+            </p>
+</div>
+<div class="buy-text">
+            BUY
+        </div>
+</div>
+<div class="export-coffee">
+<h3>
+            3,489 Export Coffee
+        </h3>
+<div class="export-line"></div>
+<p>
+            Carefully selected coffee beans
+            prepared for coffee lovers around
+            the world. Discover quality,
+            flavour and tradition in every cup.
+        </p>
+</div>
+<div class="price-page-number">
+        30
+    </div>
+</section>
 
-    <!-- ================= JAVASCRIPT ================= -->
-
-    <script src="script.js"></script>
-
+<script src="script.js"></script>
 </body>
-
 </html>
