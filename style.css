@@ -5979,7 +5979,8 @@ section {
 .taste2-info::after {
     content: "Discover a perfect coffee experience where great taste, quality and memorable moments come together.";
     display: block;
-    width: 50px;
+    width: 270px;
+    max-width: 100%;
     margin-top: 45px;
     font-size: 14px;
     line-height: 1.7;
@@ -6315,6 +6316,1259 @@ a:hover {
     *::after {
         animation: none !important;
         transition: none !important;
+    }
+
+}
+/* =========================================
+   MOBILE RESPONSIVE - SLIDES 23 & 25
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Prevent horizontal scrolling */
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* -------------------------------
+       GENERAL SECTION FIX
+       ------------------------------- */
+
+    section {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+
+    /* =================================
+       SLIDE 23
+       ================================= */
+
+    .slide-23 {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .slide-23 .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slide-23 .content {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slide-23 h1,
+    .slide-23 h2 {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(38px, 11vw, 60px);
+        line-height: 0.95;
+        margin: 15px 0 25px;
+        word-break: normal;
+    }
+
+    .slide-23 p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    .slide-23 img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
+    /* Remove desktop positioning */
+    .slide-23 .image,
+    .slide-23 .image-wrapper {
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        transform: none;
+    }
+
+
+    /* =================================
+       SLIDE 25
+       ================================= */
+
+    .slide-25 {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        height: auto;
+        padding: 50px 20px;
+        overflow: hidden;
+    }
+
+    .slide-25 .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slide-25 .content {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slide-25 h1,
+    .slide-25 h2 {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(38px, 11vw, 60px);
+        line-height: 0.95;
+        margin: 15px 0 25px;
+    }
+
+    .slide-25 p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .slide-25 img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
+    /* Remove desktop absolute positioning */
+    .slide-25 .image,
+    .slide-25 .image-wrapper {
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        transform: none;
+    }
+
+
+    /* =================================
+       MOBILE NAVBAR
+       ================================= */
+
+    header,
+    nav,
+    .navbar {
+        max-width: 100%;
+    }
+
+    nav {
+        overflow: hidden;
+    }
+
+
+    /* =================================
+       PREVENT FIXED DESKTOP WIDTHS
+       ================================= */
+
+    .slide-23 *,
+    .slide-25 * {
+        max-width: 100%;
+    }
+
+}
+/* =====================================================
+   FINAL MOBILE RESPONSIVE
+   SLIDE 23 + SLIDE 25
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* =========================================
+       SLIDE 23
+       ========================================= */
+
+    .perfect-taste-2 {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        padding: 55px 20px 45px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        overflow: hidden;
+        position: relative;
+        background: #f8f6f1;
+    }
+
+    /* Heading */
+
+    .perfect-taste-2 .taste2-heading {
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 0 30px;
+        padding: 0;
+
+        z-index: 5;
+    }
+
+    .perfect-taste-2 .taste2-heading span {
+        display: block;
+
+        font-size: 9px;
+        letter-spacing: 3px;
+        line-height: 1.5;
+
+        margin-bottom: 20px;
+    }
+
+    .perfect-taste-2 .taste2-heading h2 {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 48px;
+        line-height: 0.92;
+
+        margin: 0;
+
+        color: #321b14;
+    }
+
+    .perfect-taste-2 .taste2-heading p {
+        position: relative;
+        top: auto;
+        left: auto;
+
+        width: 100%;
+        max-width: 320px;
+
+        margin: 25px 0 0;
+
+        font-size: 12px;
+        line-height: 1.7;
+
+        color: #766b65;
+    }
+
+
+    /* Main image */
+
+    .perfect-taste-2 .taste2-main-image {
+        position: relative;
+
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+
+        width: 100%;
+        height: 330px;
+
+        margin: 0 0 20px;
+
+        overflow: hidden;
+
+        z-index: 2;
+    }
+
+    .perfect-taste-2 .taste2-main-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        display: block;
+    }
+
+
+    /* Brown information box */
+
+    .perfect-taste-2 .taste2-info {
+        position: relative;
+
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+
+        width: 100%;
+        height: auto;
+
+        min-height: 300px;
+
+        padding: 45px 30px;
+
+        background: #3a1f17;
+
+        z-index: 3;
+    }
+
+    .perfect-taste-2 .taste2-info strong {
+        font-size: 44px;
+        line-height: 1;
+
+        margin-bottom: 20px;
+    }
+
+    .perfect-taste-2 .taste2-info p {
+        font-size: 10px;
+        line-height: 1.8;
+        letter-spacing: 2px;
+    }
+
+    .perfect-taste-2 .taste2-lines {
+        margin-top: 30px;
+    }
+
+    .perfect-taste-2 .taste2-lines span {
+        height: 1px;
+    }
+
+
+    /* Hide old bottom description */
+
+    .perfect-taste-2 .taste2-bottom {
+        display: none;
+    }
+
+
+    /* Page number */
+
+    .perfect-taste-2 .taste2-page-number {
+        position: absolute;
+
+        right: 20px;
+        bottom: 15px;
+
+        font-size: 16px;
+        z-index: 10;
+    }
+
+
+
+    /* =========================================
+       SLIDE 25
+       ========================================= */
+
+    .perfect-taste {
+        width: 100%;
+        min-height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        overflow: hidden;
+        background: #ffffff;
+    }
+
+
+    /* LEFT CONTENT */
+
+    .perfect-taste .taste-left {
+        width: 100%;
+        min-height: auto;
+
+        padding: 55px 25px 45px;
+
+        position: relative;
+    }
+
+    .perfect-taste .taste-logo {
+        font-size: 22px;
+        margin-bottom: 45px;
+    }
+
+    .perfect-taste .taste-left h2 {
+        width: 100%;
+
+        font-size: 48px;
+        line-height: 0.92;
+
+        margin-bottom: 25px;
+    }
+
+    .perfect-taste .taste-description {
+        width: 100%;
+        max-width: 330px;
+
+        font-size: 12px;
+        line-height: 1.7;
+
+        margin-bottom: 40px;
+    }
+
+
+    /* FEATURES */
+
+    .perfect-taste .taste-feature {
+        width: 100%;
+        max-width: 100%;
+
+        display: flex;
+
+        gap: 18px;
+
+        margin-bottom: 28px;
+    }
+
+    .perfect-taste .taste-feature > span {
+        flex-shrink: 0;
+
+        font-size: 18px;
+    }
+
+    .perfect-taste .taste-feature h4 {
+        font-size: 22px;
+    }
+
+    .perfect-taste .taste-feature p {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+
+    /* RIGHT IMAGE AREA */
+
+    .perfect-taste .taste-right {
+        width: 100%;
+        height: 560px;
+
+        position: relative;
+
+        overflow: hidden;
+
+        transform: none;
+    }
+
+
+    /* Brown box */
+
+    .perfect-taste .taste-brown-box {
+        position: absolute;
+
+        top: 0;
+        right: 0;
+
+        width: 58%;
+        height: 250px;
+
+        padding: 40px 25px;
+
+        transform: none;
+
+        z-index: 2;
+    }
+
+    .perfect-taste .taste-number {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+
+    .perfect-taste .taste-number span {
+        font-size: 18px;
+    }
+
+    .perfect-taste .taste-brown-box p {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+
+    /* Main coffee image */
+
+    .perfect-taste .taste-main-image {
+        position: absolute;
+
+        left: 0;
+        top: 75px;
+        bottom: auto;
+
+        width: 82%;
+        height: 400px;
+
+        transform: none;
+
+        z-index: 3;
+    }
+
+    .perfect-taste .taste-main-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    /* Gold box */
+
+    .perfect-taste .taste-gold-box {
+        position: absolute;
+
+        right: 0;
+        bottom: 30px;
+
+        width: 95px;
+        height: 95px;
+
+        transform: none;
+
+        font-size: 28px;
+
+        z-index: 4;
+    }
+
+
+    /* Page number */
+
+    .perfect-taste .taste-page-number {
+        right: 15px;
+        bottom: 12px;
+
+        font-size: 16px;
+
+        z-index: 5;
+    }
+
+}
+
+
+/* =====================================================
+   EXTRA SMALL PHONES
+   ===================================================== */
+
+@media (max-width: 380px) {
+
+    /* Slide 23 */
+
+    .perfect-taste-2 {
+        padding: 45px 18px 40px;
+    }
+
+    .perfect-taste-2 .taste2-heading h2 {
+        font-size: 43px;
+    }
+
+    .perfect-taste-2 .taste2-main-image {
+        height: 300px;
+    }
+
+    .perfect-taste-2 .taste2-info {
+        min-height: 280px;
+        padding: 40px 25px;
+    }
+
+
+    /* Slide 25 */
+
+    .perfect-taste .taste-left {
+        padding: 45px 20px 40px;
+    }
+
+    .perfect-taste .taste-left h2 {
+        font-size: 43px;
+    }
+
+    .perfect-taste .taste-right {
+        height: 520px;
+    }
+
+    .perfect-taste .taste-main-image {
+        width: 84%;
+        height: 370px;
+    }
+
+    .perfect-taste .taste-brown-box {
+        width: 60%;
+        height: 230px;
+        padding: 35px 20px;
+    }
+
+    .perfect-taste .taste-gold-box {
+        width: 85px;
+        height: 85px;
+    }
+
+}
+/* =====================================================
+   SLIDE 22 — PERFECT COFFEE
+   FINAL MOBILE TABLET FIX
+   Desktop remains unchanged
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    /* Main Slide 22 */
+    .perfect-coffee {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        overflow: hidden;
+    }
+
+
+    /* =========================================
+       BROWN AREA
+       ========================================= */
+
+    .perfect-coffee .perfect-left {
+        width: 100%;
+        height: 520px;
+        min-height: 520px;
+
+        position: relative;
+
+        background: #321b13;
+
+        overflow: hidden;
+    }
+
+
+    /* =========================================
+       FULL TABLET
+       ========================================= */
+
+    .perfect-coffee .perfect-tablet {
+        position: absolute;
+
+        width: 88vw;
+        max-width: 390px;
+
+        height: 88vw;
+        max-height: 390px;
+
+        left: 50%;
+        right: auto;
+
+        top: 25px;
+
+        transform: translateX(-50%);
+
+        z-index: 5;
+
+        overflow: visible;
+    }
+
+
+    /* Tablet image itself */
+
+    .perfect-coffee .perfect-tablet img {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+
+        object-fit: contain;
+        object-position: center;
+
+        max-width: none;
+    }
+
+
+    /* =========================================
+       GOLD CARD
+       Keep it smaller and behind tablet
+       ========================================= */
+
+    .perfect-coffee .perfect-card {
+        width: 125px;
+        height: 145px;
+
+        left: 20px;
+        top: auto;
+        bottom: 25px;
+
+        padding: 20px 12px;
+
+        z-index: 4;
+    }
+
+    .perfect-coffee .card-icon {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .perfect-coffee .perfect-card h3 {
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    .perfect-coffee .perfect-card p {
+        font-size: 8px;
+        line-height: 1.5;
+    }
+
+
+    /* =========================================
+       SMALL TEXT
+       ========================================= */
+
+    .perfect-coffee .perfect-small-text {
+        left: 20px;
+        bottom: 15px;
+
+        z-index: 6;
+
+        max-width: 130px;
+    }
+
+    .perfect-coffee .perfect-small-text span {
+        font-size: 7px;
+        letter-spacing: 2px;
+    }
+
+    .perfect-coffee .perfect-small-text p {
+        font-size: 8px;
+        line-height: 1.5;
+
+        margin-top: 8px;
+    }
+
+    .perfect-coffee .small-line {
+        width: 70px;
+        margin-top: 10px;
+    }
+
+
+    /* =========================================
+       WHITE CONTENT AREA
+       ========================================= */
+
+    .perfect-coffee .perfect-right {
+        width: 100%;
+        min-height: auto;
+
+        padding: 50px 25px 60px;
+
+        position: relative;
+
+        background: #f8f6f2;
+    }
+
+
+    /* Heading */
+
+    .perfect-coffee .perfect-heading {
+        width: 100%;
+        max-width: 100%;
+
+        padding-left: 0;
+    }
+
+    .perfect-coffee .perfect-heading > span {
+        font-size: 8px;
+        letter-spacing: 3px;
+    }
+
+    .perfect-coffee .perfect-heading h2 {
+        font-size: 46px;
+        line-height: 0.92;
+
+        margin: 20px 0;
+    }
+
+    .perfect-coffee .perfect-heading p {
+        width: 100%;
+        max-width: 320px;
+
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+
+    /* =========================================
+       BOTTOM COFFEE IMAGE
+       ========================================= */
+
+    .perfect-coffee .perfect-bottom-image {
+        position: relative;
+
+        width: 100%;
+        height: 220px;
+
+        right: auto;
+        bottom: auto;
+
+        margin-top: 40px;
+
+        border: 6px solid #321b13;
+
+        transform: none;
+    }
+
+    .perfect-coffee .perfect-bottom-image img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        display: block;
+    }
+
+
+    /* =========================================
+       PAGE NUMBER
+       ========================================= */
+
+    .perfect-coffee .perfect-number {
+        right: 18px;
+        top: 18px;
+
+        font-size: 18px;
+
+        z-index: 10;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL PHONES — 360px / 375px
+   ===================================================== */
+
+@media (max-width: 500px) {
+
+    .perfect-coffee .perfect-left {
+        height: 480px;
+        min-height: 480px;
+    }
+
+
+    /* Complete tablet stays visible */
+
+    .perfect-coffee .perfect-tablet {
+        width: 86vw;
+        height: 86vw;
+
+        max-width: 350px;
+        max-height: 350px;
+
+        top: 20px;
+    }
+
+
+    /* Smaller gold card */
+
+    .perfect-coffee .perfect-card {
+        width: 105px;
+        height: 125px;
+
+        left: 15px;
+        bottom: 20px;
+
+        padding: 16px 10px;
+    }
+
+    .perfect-coffee .card-icon {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .perfect-coffee .perfect-card h3 {
+        font-size: 16px;
+    }
+
+    .perfect-coffee .perfect-card p {
+        font-size: 7px;
+    }
+
+
+    /* Hide small text on very small screens
+       so tablet gets maximum visual space */
+
+    .perfect-coffee .perfect-small-text {
+        display: none;
+    }
+
+
+    /* White section */
+
+    .perfect-coffee .perfect-right {
+        padding: 45px 22px 50px;
+    }
+
+    .perfect-coffee .perfect-heading h2 {
+        font-size: 43px;
+    }
+
+    .perfect-coffee .perfect-heading p {
+        font-size: 10px;
+    }
+
+
+    .perfect-coffee .perfect-bottom-image {
+        height: 200px;
+        margin-top: 35px;
+    }
+
+}
+/* =====================================================
+   CAFFECO — PARAGRAPH POSITION & WIDTH FIX
+   ===================================================== */
+
+
+/* -----------------------------------------------------
+   SLIDE 11 — PERFECT COFFEE
+   "Discover the rich flavour..." paragraph
+   ----------------------------------------------------- */
+
+.perfect-coffee .perfect-heading p {
+    width: 100%;
+    max-width: 430px;
+
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0;
+
+    color: #756c65;
+}
+
+
+/* -----------------------------------------------------
+   SLIDE 23 — PERFECT COFFEE TASTE
+   "Discover a perfect coffee experience..." paragraph
+   ----------------------------------------------------- */
+
+/* FIX: remove the 50px width that was causing
+   one-word-per-line text */
+
+.perfect-taste-2 .taste2-info::after {
+    display: block;
+
+    width: 100%;
+    max-width: 270px;
+
+    margin-top: 35px;
+
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0;
+
+    color: #e8ddd7;
+
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: normal;
+}
+
+
+/* =====================================================
+   DESKTOP
+   ===================================================== */
+
+@media (min-width: 801px) {
+
+    /* Slide 11 paragraph */
+
+    .perfect-coffee .perfect-heading p {
+        max-width: 430px;
+    }
+
+
+    /* Slide 23 paragraph */
+
+    .perfect-taste-2 .taste2-info::after {
+        width: 270px;
+        max-width: 270px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    /* Slide 11 */
+
+    .perfect-coffee .perfect-heading p {
+        width: 100%;
+        max-width: 330px;
+
+        font-size: 12px;
+        line-height: 1.7;
+
+        margin-top: 0;
+    }
+
+
+    /* Slide 23 */
+
+    .perfect-taste-2 .taste2-info::after {
+        width: 100%;
+        max-width: 320px;
+
+        font-size: 13px;
+        line-height: 1.7;
+
+        margin-top: 30px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE — 360px / 375px
+   ===================================================== */
+
+@media (max-width: 500px) {
+
+    .perfect-coffee .perfect-heading p {
+        width: 100%;
+        max-width: 320px;
+
+        font-size: 11px;
+        line-height: 1.7;
+    }
+
+
+    .perfect-taste-2 .taste2-info::after {
+        width: 100%;
+        max-width: 300px;
+
+        font-size: 13px;
+        line-height: 1.7;
+
+        margin-top: 25px;
+    }
+
+}
+/* =====================================================
+   SLIDE 23 — FINAL PARAGRAPH POSITION FIX
+   ===================================================== */
+
+@media (min-width: 801px) {
+
+    .perfect-taste-2 .taste2-heading {
+        height: 600px !important;
+    }
+
+    .perfect-taste-2 .taste2-heading p {
+        position: absolute !important;
+
+        top: auto !important;
+        bottom: 35px !important;
+
+        left: 0 !important;
+
+        width: 290px !important;
+        max-width: 320px !important;
+
+        margin: 0 !important;
+
+        font-size: 13px !important;
+        line-height: 1.7 !important;
+
+        color: #766b65 !important;
+
+        z-index: 20 !important;
+    }
+
+}
+/* =====================================================
+   SLIDE 23 — BROWN BOX PARAGRAPH
+   ===================================================== */
+
+@media (min-width: 801px) {
+
+    .perfect-taste-2 .taste2-bottom {
+        display: block !important;
+
+        position: absolute !important;
+
+        right: 3.5% !important;
+        left: auto !important;
+
+        bottom: 65px !important;
+
+        width: 22% !important;
+        max-width: 300px !important;
+
+        z-index: 20 !important;
+    }
+
+    .perfect-taste-2 .taste2-bottom p {
+        width: 100% !important;
+        max-width: 300px !important;
+
+        margin: 0 !important;
+
+        font-size: 13px !important;
+        line-height: 1.7 !important;
+
+        letter-spacing: 0 !important;
+
+        color: #ffffff !important;
+
+        white-space: normal !important;
+        word-break: normal !important;
+        overflow-wrap: normal !important;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .perfect-taste-2 .taste2-bottom {
+        display: block !important;
+
+        position: relative !important;
+
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin-top: 30px !important;
+    }
+
+    .perfect-taste-2 .taste2-bottom p {
+        width: 100% !important;
+        max-width: 300px !important;
+
+        font-size: 13px !important;
+        line-height: 1.7 !important;
+
+        color: #ffffff !important;
+
+        letter-spacing: 0 !important;
+    }
+
+}
+/* =====================================================
+   SLIDE 23 — REMOVE FIRST BROWN PARAGRAPH
+   KEEP ONLY LONG PARAGRAPH
+   ===================================================== */
+
+/* Remove the first paragraph created inside brown box */
+.perfect-taste-2 .taste2-info::after {
+    display: none !important;
+}
+
+/* Keep the longer paragraph */
+.perfect-taste-2 .taste2-bottom {
+    display: block !important;
+
+    position: absolute !important;
+
+    right: 3.5% !important;
+    left: auto !important;
+
+    bottom: 45px !important;
+
+    width: 22% !important;
+    max-width: 300px !important;
+
+    z-index: 20 !important;
+}
+
+.perfect-taste-2 .taste2-bottom p {
+    width: 100% !important;
+    max-width: 300px !important;
+
+    margin: 0 !important;
+
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+
+    letter-spacing: 0 !important;
+
+    color: #ffffff !important;
+}
+
+
+/* Mobile */
+@media (max-width: 800px) {
+
+    .perfect-taste-2 .taste2-info::after {
+        display: none !important;
+    }
+
+    .perfect-taste-2 .taste2-bottom {
+        position: relative !important;
+
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        margin-top: 30px !important;
+    }
+
+    .perfect-taste-2 .taste2-bottom p {
+        width: 100% !important;
+        max-width: 300px !important;
+
+        font-size: 13px !important;
+        line-height: 1.7 !important;
+    }
+}
+/* =====================================================
+   SLIDE 23 — BROWN PARAGRAPH FINAL POSITION
+   ===================================================== */
+
+@media (min-width: 801px) {
+
+    .perfect-taste-2 .taste2-bottom {
+        bottom: 200px !important;
+    }
+
+    .perfect-taste-2 .taste2-bottom p {
+        margin: 0 !important;
     }
 
 }
