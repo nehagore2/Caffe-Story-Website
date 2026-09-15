@@ -20,497 +20,574 @@
 
 <body>
 
-<!-- =====================================================
-     NAVBAR
-===================================================== -->
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
 
-<nav class="navbar">
+    <nav class="navbar">
 
-    <a href="index.html" class="nav-logo">
-        Caffeco
-    </a>
-
-    <button class="menu-toggle" id="menuToggle">
-        ☰
-    </button>
-
-    <div class="nav-links" id="nav">
-
-        <a href="index.html">Home</a>
-
-        <a href="menu.html">Menu</a>
-
-        <a href="story.html">Our Story</a>
-
-        <a href="experience.html">Experience</a>
-
-        <a href="collection.html">Collection</a>
-
-        <a href="contact.html">Contact</a>
-
-    </div>
-
-</nav>
-
-
-<main class="reference-inner">
-
-
-<!-- =====================================================
-     CONTACT HERO
-===================================================== -->
-
-<section class="ref-inner-hero contact-hero">
-
-    <span class="ref-kicker">
-        CONTACT CAFFECO
-    </span>
-
-    <h1>
-        Let's Brew<br>
-        Something Special
-    </h1>
-
-    <p>
-        We'd love to hear from you.
-        Send a message or simply say hello.
-    </p>
-
-</section>
-
-
-
-<!-- =====================================================
-     CONTACT INTRO + FORM
-===================================================== -->
-
-<section class="ref-contact-page">
-
-    <div class="ref-contact-page-copy">
-
-        <span class="ref-kicker">
-            GET IN TOUCH
-        </span>
-
-        <h2>
-            Every coffee<br>
-            moment starts<br>
-            with a hello.
-        </h2>
-
-        <p>
-            Whether you want to know more about our coffee,
-            our collection or simply want to share your
-            coffee story, we'd love to hear from you.
-        </p>
-
-
-        <div class="contact-placeholders">
-
-            <div>
-                <b>LOCATION</b>
-                <span>ADD YOUR LOCATION</span>
-            </div>
-
-            <div>
-                <b>EMAIL</b>
-                <span>ADD YOUR EMAIL</span>
-            </div>
-
-            <div>
-                <b>PHONE</b>
-                <span>ADD YOUR PHONE</span>
-            </div>
-
-            <div>
-                <b>HOURS</b>
-                <span>ADD YOUR OPENING HOURS</span>
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- CONTACT FORM -->
-
-    <form
-        class="caffeco-contact-form ref-contact-form"
-        id="contactForm"
-    >
-
-        <span class="ref-kicker">
-            SEND A MESSAGE
-        </span>
-
-
-        <label>
-            First Name
-
-            <input
-                type="text"
-                name="firstName"
-                required
-            >
-
-        </label>
-
-
-        <label>
-            Last Name
-
-            <input
-                type="text"
-                name="lastName"
-                required
-            >
-
-        </label>
-
-
-        <label>
-            Email
-
-            <input
-                type="email"
-                name="email"
-                required
-            >
-
-        </label>
-
-
-        <label>
-            Phone
-
-            <input
-                type="tel"
-                name="phone"
-            >
-
-        </label>
-
-
-        <label>
-            Message
-
-            <textarea
-                name="message"
-                rows="6"
-                required
-            ></textarea>
-
-        </label>
-
-
-        <button type="submit">
-            SEND MESSAGE ↗
-        </button>
-
-    </form>
-
-</section>
-
-
-
-<!-- =====================================================
-     LOCATION + MAP
-===================================================== -->
-
-<section class="caffeco-location-section">
-
-    <div class="caffeco-location-heading">
-
-        <span class="ref-kicker">
-            FIND CAFFECO
-        </span>
-
-        <h2>
-            Come Say<br>
-            Hello.
-        </h2>
-
-        <p>
-            Good coffee tastes even better when shared.
-            Find us and enjoy a moment of the Caffeco experience.
-        </p>
-
-    </div>
-
-
-
-    <div class="caffeco-location-grid">
-
-
-        <!-- LOCATION INFORMATION -->
-
-        <div class="caffeco-location-info">
-
-            <div class="location-item">
-
-                <span>01</span>
-
-                <div>
-                    <b>OUR LOCATION</b>
-
-                    <p>
-                        ADD YOUR LOCATION
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="location-item">
-
-                <span>02</span>
-
-                <div>
-                    <b>CONTACT</b>
-
-                    <p>
-                        ADD YOUR PHONE<br>
-                        ADD YOUR EMAIL
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="location-item">
-
-                <span>03</span>
-
-                <div>
-                    <b>OPENING HOURS</b>
-
-                    <p>
-                        ADD YOUR OPENING HOURS
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- MAP -->
-
-        <div class="caffeco-map">
-
-            <!-- Replace the iframe URL with your actual
-                 Caffeco Google Maps location -->
-
-            <iframe
-                src="https://www.google.com/maps?q=India&output=embed"
-                width="100%"
-                height="420"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CUSTOMER REVIEWS
-===================================================== -->
-
-<section class="caffeco-reviews">
-
-    <div class="reviews-heading">
-
-        <span class="ref-kicker">
-            COFFEE LOVERS
-        </span>
-
-        <h2>
-            What They<br>
-            Say.
-        </h2>
-
-        <p>
-            Real coffee moments, shared by people
-            who love a good cup.
-        </p>
-
-    </div>
-
-
-
-    <div class="review-grid">
-
-
-        <!-- REVIEW 01 -->
-
-        <article class="caffeco-review-card">
-
-            <div class="review-stars">
-                ★★★★★
-            </div>
-
-            <p>
-                "A beautiful coffee experience.
-                The atmosphere, presentation and
-                coffee make every visit memorable."
-            </p>
-
-            <span>
-                CUSTOMER REVIEW
-            </span>
-
-        </article>
-
-
-
-        <!-- REVIEW 02 -->
-
-        <article class="caffeco-review-card">
-
-            <div class="review-stars">
-                ★★★★★
-            </div>
-
-            <p>
-                "The perfect place to slow down,
-                enjoy a great cup and create
-                a beautiful coffee moment."
-            </p>
-
-            <span>
-                CUSTOMER REVIEW
-            </span>
-
-        </article>
-
-
-
-        <!-- REVIEW 03 -->
-
-        <article class="caffeco-review-card">
-
-            <div class="review-stars">
-                ★★★★★
-            </div>
-
-            <p>
-                "Rich flavour, beautiful presentation
-                and a warm coffee experience."
-            </p>
-
-            <span>
-                CUSTOMER REVIEW
-            </span>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CONTACT CTA
-===================================================== -->
-
-<section class="caffeco-contact-cta">
-
-    <div>
-
-        <span>
-            YOUR NEXT COFFEE MOMENT
-        </span>
-
-        <h2>
-            Let's Make<br>
-            It Special.
-        </h2>
-
-        <a href="menu.html">
-            EXPLORE OUR MENU ↗
+        <a href="index.html" class="nav-logo">
+            Caffeco
         </a>
 
-    </div>
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
 
-    <div class="contact-cta-image">
+        <div class="nav-links" id="nav">
 
-        <img
-            src="images/coffee-cups.jpg"
-            alt="Caffeco coffee"
-        >
+            <a href="index.html">Home</a>
 
-    </div>
+            <a href="menu.html">Menu</a>
 
-</section>
+            <a href="story.html">Our Story</a>
 
+            <a href="experience.html">Experience</a>
 
-</main>
+            <a href="collection.html">Collection</a>
 
+            <a href="contact.html">Contact</a>
 
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer class="caffeco-reference-footer">
-
-    <div class="footer-brand">
-
-        <div class="footer-logo">
-            Caffeco
         </div>
 
-        <span>
-            GOOD COFFEE · BETTER DAYS
-        </span>
-
-    </div>
+    </nav>
 
 
-    <div class="footer-links">
-
-        <a href="index.html">Home</a>
-
-        <a href="menu.html">Menu</a>
-
-        <a href="story.html">Our Story</a>
-
-        <a href="experience.html">Experience</a>
-
-        <a href="collection.html">Collection</a>
-
-        <a href="contact.html">Contact</a>
-
-    </div>
+    <main class="reference-inner">
 
 
-    <div class="footer-copy">
-        © 2026 Caffeco. All Rights Reserved.
-    </div>
+        <!-- =====================================================
+             CONTACT HERO
+        ====================================================== -->
+
+        <section class="ref-inner-hero contact-hero">
+
+            <span class="ref-kicker">
+                CONTACT CAFFECO
+            </span>
+
+            <h1>
+                Let's Brew<br>
+                Something Special
+            </h1>
+
+            <p>
+                We'd love to hear from you.
+                Send a message or simply say hello.
+            </p>
+
+        </section>
 
 
-    <a
-        href="#"
-        class="footer-top"
-        aria-label="Back to top"
-    >
-        ↑
-    </a>
 
-</footer>
+        <!-- =====================================================
+             CONTACT INTRO + FORM
+        ====================================================== -->
+
+        <section class="ref-contact-page">
+
+            <div class="ref-contact-page-copy">
+
+                <span class="ref-kicker">
+                    GET IN TOUCH
+                </span>
+
+                <h2>
+                    Every coffee<br>
+                    moment starts<br>
+                    with a hello.
+                </h2>
+
+                <p>
+                    Whether you want to know more about our coffee,
+                    our collection or simply want to share your
+                    coffee story, we'd love to hear from you.
+                </p>
 
 
-<script src="script.js"></script>
+                <div class="contact-placeholders">
+
+
+                    <!-- LOCATION -->
+
+                    <div>
+
+                        <b>LOCATION</b>
+
+                        <span>
+                            Caffeco Coffee House<br>
+                            21 Coffee Street, Koregaon Park<br>
+                            Pune, Maharashtra 411001<br>
+                            India
+                        </span>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div>
+
+                        <b>EMAIL</b>
+
+                        <span>
+                            hello@caffeco.in
+                        </span>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div>
+
+                        <b>PHONE</b>
+
+                        <span>
+                            +91 98765 43210
+                        </span>
+
+                    </div>
+
+
+                    <!-- HOURS -->
+
+                    <div>
+
+                        <b>HOURS</b>
+
+                        <span>
+                            Mon – Fri: 8:00 AM – 9:00 PM<br>
+                            Sat – Sun: 9:00 AM – 10:00 PM
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CONTACT FORM
+            ================================================== -->
+
+            <form
+                class="caffeco-contact-form ref-contact-form"
+                id="contactForm"
+            >
+
+                <span class="ref-kicker">
+                    SEND A MESSAGE
+                </span>
+
+
+                <label>
+
+                    First Name
+
+                    <input
+                        type="text"
+                        name="firstName"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+
+                    Last Name
+
+                    <input
+                        type="text"
+                        name="lastName"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+
+                    Email
+
+                    <input
+                        type="email"
+                        name="email"
+                        required
+                    >
+
+                </label>
+
+
+                <label>
+
+                    Phone
+
+                    <input
+                        type="tel"
+                        name="phone"
+                    >
+
+                </label>
+
+
+                <label>
+
+                    Message
+
+                    <textarea
+                        name="message"
+                        rows="6"
+                        required
+                    ></textarea>
+
+                </label>
+
+
+                <button type="submit">
+                    SEND MESSAGE ↗
+                </button>
+
+            </form>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             LOCATION + MAP
+        ====================================================== -->
+
+        <section class="caffeco-location-section">
+
+
+            <div class="caffeco-location-heading">
+
+                <span class="ref-kicker">
+                    FIND CAFFECO
+                </span>
+
+                <h2>
+                    Come Say<br>
+                    Hello.
+                </h2>
+
+                <p>
+                    Good coffee tastes even better when shared.
+                    Find us and enjoy a moment of the Caffeco experience.
+                </p>
+
+            </div>
+
+
+
+            <div class="caffeco-location-grid">
+
+
+                <!-- LOCATION INFORMATION -->
+
+                <div class="caffeco-location-info">
+
+
+                    <!-- LOCATION -->
+
+                    <div class="location-item">
+
+                        <span>01</span>
+
+                        <div>
+
+                            <b>OUR LOCATION</b>
+
+                            <p>
+                                Caffeco Coffee House<br>
+                                21 Coffee Street, Koregaon Park<br>
+                                Pune, Maharashtra 411001<br>
+                                India
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CONTACT -->
+
+                    <div class="location-item">
+
+                        <span>02</span>
+
+                        <div>
+
+                            <b>CONTACT</b>
+
+                            <p>
+                                +91 98765 43210<br>
+                                hello@caffeco.in
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- OPENING HOURS -->
+
+                    <div class="location-item">
+
+                        <span>03</span>
+
+                        <div>
+
+                            <b>OPENING HOURS</b>
+
+                            <p>
+                                Monday – Friday<br>
+                                8:00 AM – 9:00 PM<br><br>
+
+                                Saturday – Sunday<br>
+                                9:00 AM – 10:00 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- MAP -->
+
+                <div class="caffeco-map">
+
+                    <iframe
+                        src="https://www.google.com/maps?q=Koregaon%20Park%2C%20Pune%2C%20Maharashtra%2C%20India&output=embed"
+                        width="100%"
+                        height="420"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CUSTOMER REVIEWS
+        ====================================================== -->
+
+        <section class="caffeco-reviews">
+
+
+            <div class="reviews-heading">
+
+                <span class="ref-kicker">
+                    COFFEE LOVERS
+                </span>
+
+                <h2>
+                    What They<br>
+                    Say.
+                </h2>
+
+                <p>
+                    Coffee moments shared by people
+                    who love a good cup.
+                </p>
+
+            </div>
+
+
+
+            <div class="review-grid">
+
+
+                <!-- REVIEW 01 -->
+
+                <article class="caffeco-review-card">
+
+                    <div class="review-stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        "A beautiful coffee experience.
+                        The atmosphere, presentation and
+                        coffee make every visit memorable."
+                    </p>
+
+                    <span>
+                        CUSTOMER REVIEW
+                    </span>
+
+                </article>
+
+
+
+                <!-- REVIEW 02 -->
+
+                <article class="caffeco-review-card">
+
+                    <div class="review-stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        "The perfect place to slow down,
+                        enjoy a great cup and create
+                        a beautiful coffee moment."
+                    </p>
+
+                    <span>
+                        CUSTOMER REVIEW
+                    </span>
+
+                </article>
+
+
+
+                <!-- REVIEW 03 -->
+
+                <article class="caffeco-review-card">
+
+                    <div class="review-stars">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        "Rich flavour, beautiful presentation
+                        and a warm coffee experience."
+                    </p>
+
+                    <span>
+                        CUSTOMER REVIEW
+                    </span>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CONTACT CTA
+        ====================================================== -->
+
+        <section class="caffeco-contact-cta">
+
+
+            <div>
+
+                <span>
+                    YOUR NEXT COFFEE MOMENT
+                </span>
+
+                <h2>
+                    Let's Make<br>
+                    It Special.
+                </h2>
+
+                <a href="menu.html">
+                    EXPLORE OUR MENU ↗
+                </a>
+
+            </div>
+
+
+            <div class="contact-cta-image">
+
+                <img
+                    src="images/coffee-cups.jpg"
+                    alt="Caffeco coffee"
+                >
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="caffeco-reference-footer">
+
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                Caffeco
+            </div>
+
+            <span>
+                GOOD COFFEE · BETTER DAYS
+            </span>
+
+        </div>
+
+
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+
+            <a href="menu.html">Menu</a>
+
+            <a href="story.html">Our Story</a>
+
+            <a href="experience.html">Experience</a>
+
+            <a href="collection.html">Collection</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+
+        <div class="footer-copy">
+            © 2026 Caffeco. All Rights Reserved.
+        </div>
+
+
+
+        <a
+            href="#"
+            class="footer-top"
+            aria-label="Back to top"
+        >
+            ↑
+        </a>
+
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
 
 </body>
 
