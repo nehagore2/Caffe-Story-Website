@@ -226,3 +226,3478 @@ body{overflow-x:hidden}
   .ref-contact-item{border-left:0;border-top:1px solid var(--ref-line);padding:15px 0 0}
   .ref-hero-button{font-size:9px}
 }
+
+/* =====================================================
+   CAFFECO CONTACT PAGE
+===================================================== */
+
+.caffeco-location-section {
+    padding: 110px 8%;
+    background: #f3eee7;
+}
+
+.caffeco-location-heading {
+    max-width: 650px;
+    margin-bottom: 60px;
+}
+
+.caffeco-location-heading h2,
+.reviews-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(55px, 7vw, 90px);
+    line-height: .9;
+    font-weight: 500;
+    color: #3b2117;
+    margin: 15px 0 25px;
+}
+
+.caffeco-location-heading p,
+.reviews-heading p {
+    max-width: 500px;
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #6d5b50;
+}
+
+
+.caffeco-location-grid {
+    display: grid;
+    grid-template-columns: .75fr 1.25fr;
+    gap: 50px;
+    align-items: stretch;
+}
+
+
+.caffeco-location-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid #c9b8a8;
+}
+
+
+.location-item {
+    display: flex;
+    gap: 25px;
+    padding: 30px 0;
+    border-bottom: 1px solid #c9b8a8;
+}
+
+
+.location-item > span {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+    color: #9a7657;
+}
+
+
+.location-item b {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: 9px;
+    letter-spacing: 3px;
+    color: #8c6245;
+    margin-bottom: 10px;
+}
+
+
+.location-item p {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #4b362b;
+}
+
+
+.caffeco-map {
+    min-height: 420px;
+    background: #ddd2c7;
+    overflow: hidden;
+}
+
+
+.caffeco-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    filter: grayscale(100%);
+}
+
+
+/* =====================================================
+   REVIEWS
+===================================================== */
+
+.caffeco-reviews {
+    padding: 120px 8%;
+    background: #fffdf9;
+}
+
+
+.reviews-heading {
+    margin-bottom: 65px;
+}
+
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+.caffeco-review-card {
+    padding: 40px 35px;
+    min-height: 280px;
+    background: #eee5dc;
+    border: 1px solid #dfd2c5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.review-stars {
+    font-size: 15px;
+    letter-spacing: 4px;
+    color: #a8794f;
+}
+
+
+.caffeco-review-card p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 23px;
+    line-height: 1.35;
+    color: #3b2117;
+}
+
+
+.caffeco-review-card > span {
+    font-family: "Poppins", sans-serif;
+    font-size: 8px;
+    letter-spacing: 3px;
+    color: #8c6245;
+}
+
+
+/* =====================================================
+   CONTACT CTA
+===================================================== */
+
+.caffeco-contact-cta {
+    min-height: 360px;
+    height: 360px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #4a281b;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.caffeco-contact-cta > div:first-child {
+    padding: 55px 8%;
+    position: relative;
+    z-index: 2;
+}
+
+
+.caffeco-contact-cta span {
+    font-family: "Poppins", sans-serif;
+    font-size: 9px;
+    letter-spacing: 4px;
+    color: #c9aa84;
+}
+
+
+.caffeco-contact-cta h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(48px, 6vw, 75px);
+    line-height: .85;
+    font-weight: 500;
+    margin: 18px 0 28px;
+}
+
+
+.caffeco-contact-cta a {
+    display: inline-block;
+    padding: 11px 20px;
+    border: 1px solid #c9aa84;
+    border-radius: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+
+.contact-cta-image {
+    height: 360px;
+}
+
+
+.contact-cta-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .45;
+}
+
+
+/* =====================================================
+   CONTACT MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .caffeco-location-section {
+        padding: 80px 6%;
+    }
+
+
+    .caffeco-location-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+
+    .caffeco-map,
+    .caffeco-map iframe {
+        min-height: 320px;
+        height: 320px;
+    }
+
+
+    .caffeco-reviews {
+        padding: 80px 6%;
+    }
+
+
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .caffeco-review-card {
+        min-height: 240px;
+    }
+
+
+    .caffeco-contact-cta {
+        min-height: auto;
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+
+
+    .caffeco-contact-cta > div:first-child {
+        padding: 65px 7%;
+    }
+
+
+    .contact-cta-image {
+        height: 260px;
+    }
+
+}
+/* =====================================================
+   CAFFECO — THE PEOPLE SECTION
+   Kaapi & Co inspired layout
+===================================================== */
+
+.caffeco-people-section {
+    width: 100%;
+    min-height: 680px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+    padding: 100px 7%;
+    box-sizing: border-box;
+}
+
+
+/* IMAGE */
+
+.people-image {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+}
+
+.people-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.people-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* CONTENT */
+
+.people-content {
+    max-width: 650px;
+}
+
+.people-kicker {
+    display: block;
+    margin-bottom: 25px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #c7953e;
+}
+
+
+/* HEADING */
+
+.people-content h2 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(48px, 5vw, 72px);
+    font-weight: 500;
+    line-height: 0.95;
+    color: #3d2414;
+}
+
+
+/* SMALL GOLD LINE */
+
+.people-line {
+    width: 72px;
+    height: 2px;
+    background: #d6a542;
+    margin: 38px 0;
+}
+
+
+/* PARAGRAPH */
+
+.people-content > p {
+    max-width: 650px;
+
+    margin: 0;
+
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.9;
+    color: #59483d;
+}
+
+
+/* STATS */
+
+.people-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    margin-top: 45px;
+}
+
+.people-stat {
+    position: relative;
+
+    padding: 28px 25px;
+
+    border-top: 1px solid #ddd3c8;
+    border-left: 1px solid #d6a542;
+}
+
+
+/* GOLD DOT */
+
+.people-stat::before {
+    content: "";
+
+    position: absolute;
+
+    top: -5px;
+    left: -5px;
+
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: #d6a542;
+}
+
+
+/* NUMBER */
+
+.stat-number {
+    display: block;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1;
+
+    color: #3d2414;
+}
+
+
+/* LABEL */
+
+.stat-label {
+    display: block;
+
+    margin-top: 12px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 4px;
+
+    color: #a18e80;
+}
+
+
+/* BUTTON */
+
+.people-button {
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding: 16px 28px;
+
+    background: #4a2815;
+    color: #fff;
+
+    text-decoration: none;
+
+    font-family: Poppins, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.people-button:hover {
+    background: #6a3b20;
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .caffeco-people-section {
+        grid-template-columns: 1fr;
+        gap: 45px;
+
+        padding: 70px 6%;
+    }
+
+    .people-image {
+        height: 360px;
+    }
+
+    .people-content h2 {
+        font-size: 48px;
+    }
+
+    .people-content > p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .people-stats {
+        gap: 20px;
+    }
+
+    .people-stat {
+        padding: 22px 18px;
+    }
+
+    .stat-number {
+        font-size: 40px;
+    }
+
+    .stat-label {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .caffeco-people-section {
+        padding: 55px 20px;
+    }
+
+    .people-image {
+        height: 300px;
+    }
+
+    .people-content h2 {
+        font-size: 42px;
+    }
+
+    .people-stats {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =====================================================
+   CAFFECO — THREE PROMISES SECTION
+   Kaapi & Co inspired layout
+===================================================== */
+
+.caffeco-promises-section {
+    width: 100%;
+    background: #4a2815;
+    color: #fff;
+
+    padding: 95px 7% 110px;
+
+    box-sizing: border-box;
+}
+
+
+/* HEADING */
+
+.promises-heading {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 90px;
+}
+
+.promises-heading > span {
+    display: block;
+
+    font-family: Poppins, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+
+    letter-spacing: 5px;
+
+    color: #d6a542;
+
+    margin-bottom: 30px;
+}
+
+
+.promises-heading h2 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(50px, 6vw, 78px);
+
+    font-weight: 500;
+
+    line-height: 0.95;
+
+    color: #fff;
+}
+
+
+/* GOLD LINE */
+
+.promises-line {
+    width: 72px;
+    height: 2px;
+
+    background: #d6a542;
+
+    margin: 42px auto 0;
+}
+
+
+/* THREE COLUMNS */
+
+.promises-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 70px;
+}
+
+
+/* INDIVIDUAL PROMISE */
+
+.promise-item {
+    position: relative;
+
+    padding-top: 0;
+}
+
+
+/* NUMBER */
+
+.promise-number {
+    display: block;
+
+    margin-bottom: 25px;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 10px;
+    font-weight: 500;
+
+    letter-spacing: 5px;
+
+    color: #d6a542;
+}
+
+
+/* HEADING */
+
+.promise-item h3 {
+    margin: 0 0 18px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 32px;
+
+    font-weight: 600;
+
+    line-height: 1.1;
+
+    color: #fff;
+}
+
+
+/* DESCRIPTION */
+
+.promise-item p {
+    margin: 0;
+
+    max-width: 420px;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 300;
+
+    line-height: 1.9;
+
+    color: #dfd0c4;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .caffeco-promises-section {
+        padding: 75px 6% 80px;
+    }
+
+
+    .promises-heading {
+        margin-bottom: 60px;
+    }
+
+
+    .promises-heading h2 {
+        font-size: 48px;
+    }
+
+
+    .promises-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+
+    .promise-item h3 {
+        font-size: 30px;
+    }
+
+
+    .promise-item p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .caffeco-promises-section {
+        padding: 60px 20px 70px;
+    }
+
+
+    .promises-heading h2 {
+        font-size: 42px;
+    }
+
+
+
+    .promises-heading > span {
+        font-size: 9px;
+        letter-spacing: 4px;
+    }
+
+
+    .promise-item h3 {
+        font-size: 28px;
+    }
+
+}
+/* =====================================================
+   CAFFECO MENU PAGE
+   KAAPI & CO INSPIRED ADDITIONS
+===================================================== */
+
+
+/* =====================================================
+   MENU INTRODUCTION
+===================================================== */
+
+.caffeco-menu-introduction {
+    background: #f7f2e9;
+    text-align: center;
+    padding: 100px 7%;
+}
+
+.caffeco-menu-introduction h2 {
+    margin: 18px auto 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(50px, 6vw, 78px);
+    font-weight: 500;
+    line-height: .92;
+
+    color: #3d2414;
+}
+
+.menu-intro-line {
+    width: 70px;
+    height: 2px;
+    background: #d6a542;
+
+    margin: 38px auto;
+}
+
+.caffeco-menu-introduction p {
+    max-width: 700px;
+    margin: auto;
+
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.9;
+
+    color: #76675d;
+}
+
+
+/* =====================================================
+   COFFEE + CHAI MENU
+===================================================== */
+
+.caffeco-menu-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 85px;
+
+    padding: 100px 7%;
+
+    background: #fff;
+}
+
+.menu-category h2 {
+    margin: 18px 0 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(50px, 5vw, 70px);
+    font-weight: 500;
+    line-height: .95;
+
+    color: #3d2414;
+}
+
+.menu-gold-line {
+    width: 72px;
+    height: 2px;
+
+    background: #d6a542;
+
+    margin: 35px 0 45px;
+}
+
+
+/* MENU ITEM */
+
+.menu-item {
+    display: flex;
+    align-items: center;
+
+    min-height: 105px;
+
+    border-bottom: 1px solid #e7e0d9;
+
+    gap: 15px;
+}
+
+.menu-item-info {
+    flex-shrink: 0;
+}
+
+.menu-item h3 {
+    margin: 0 0 7px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+    font-weight: 600;
+
+    color: #3d2414;
+}
+
+.menu-item p {
+    margin: 0;
+
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.6;
+
+    color: #9b8d82;
+}
+
+.menu-dots {
+    flex: 1;
+
+    border-bottom: 1px dotted #d7cec5;
+
+    margin-top: 18px;
+}
+
+.menu-item strong {
+    white-space: nowrap;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    font-weight: 600;
+
+    color: #674122;
+}
+
+
+/* =====================================================
+   RETAIL / PRICE TABLE
+===================================================== */
+
+.caffeco-retail-section {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+
+    gap: 70px;
+
+    padding: 100px 7%;
+
+    background: #fff;
+}
+
+.retail-intro .ref-kicker {
+    display: block;
+}
+
+.retail-intro h2 {
+    margin: 20px 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(55px, 6vw, 80px);
+    font-weight: 500;
+    line-height: .9;
+
+    color: #3d2414;
+}
+
+.retail-line {
+    width: 70px;
+    height: 2px;
+
+    background: #d6a542;
+
+    margin: 35px 0;
+}
+
+.retail-intro > p {
+    max-width: 520px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.9;
+
+    color: #76675d;
+}
+
+
+/* RETAIL STAT */
+
+.retail-stat {
+    margin-top: 50px;
+
+    max-width: 400px;
+
+    padding: 40px;
+
+    background: #4a2815;
+    color: #fff;
+}
+
+.retail-stat strong {
+    display: block;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 55px;
+    font-weight: 600;
+
+    color: #d6a542;
+}
+
+.retail-stat p {
+    margin: 8px 0 0;
+
+    font-family: Poppins, sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    line-height: 1.7;
+
+    color: #e5d7cc;
+}
+
+
+/* RETAIL PRODUCTS */
+
+.retail-products {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.retail-product {
+    display: grid;
+
+    grid-template-columns: 190px 1fr 100px;
+
+    align-items: center;
+
+    min-height: 130px;
+
+    padding: 25px 38px;
+
+    box-sizing: border-box;
+
+    background: #f7f2e9;
+}
+
+.retail-product-dark {
+    background: #4a2815;
+}
+
+.retail-price {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    font-weight: 500;
+
+    color: #3d2414;
+}
+
+.retail-product-dark .retail-price {
+    color: #d6a542;
+}
+
+.retail-product-info h3 {
+    margin: 0 0 7px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 27px;
+    font-weight: 600;
+
+    color: #3d2414;
+}
+
+.retail-product-dark .retail-product-info h3 {
+    color: #fff;
+}
+
+.retail-product-info p {
+    margin: 0;
+
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+
+    color: #998a7e;
+}
+
+.retail-product-dark .retail-product-info p {
+    color: #d6c5b8;
+}
+
+.retail-product > a {
+    justify-self: end;
+
+    padding: 14px 24px;
+
+    background: #d6a542;
+
+    color: #2f1b0e;
+
+    text-decoration: none;
+
+    font-family: Poppins, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    transition: .3s ease;
+}
+
+.retail-product > a:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   SUBSCRIPTIONS
+===================================================== */
+
+.caffeco-subscription-section {
+    padding: 110px 7%;
+
+    background: #f0e6d5;
+}
+
+.subscription-heading {
+    text-align: center;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.subscription-heading h2 {
+    margin: 20px 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(52px, 6vw, 78px);
+    font-weight: 500;
+    line-height: .92;
+
+    color: #3d2414;
+}
+
+.subscription-line {
+    width: 70px;
+    height: 2px;
+
+    background: #d6a542;
+
+    margin: 40px auto;
+}
+
+.subscription-heading p {
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+
+    color: #76675d;
+}
+
+
+/* SUBSCRIPTION CARDS */
+
+.subscription-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 42px;
+
+    margin-top: 70px;
+}
+
+.subscription-card {
+    text-align: center;
+
+    padding: 55px 40px;
+
+    background: #fff;
+
+    box-sizing: border-box;
+}
+
+.subscription-card-featured {
+    background: #4a2815;
+    color: #fff;
+}
+
+.subscription-label {
+    display: block;
+
+    margin-bottom: 28px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+
+    letter-spacing: 4px;
+
+    color: #d6a542;
+}
+
+.subscription-card h3 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    font-weight: 600;
+
+    color: #3d2414;
+}
+
+.subscription-card-featured h3 {
+    color: #fff;
+}
+
+.subscription-price {
+    margin: 15px 0 20px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 55px;
+    font-weight: 500;
+
+    color: #d6a542;
+}
+
+.subscription-card > p {
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+
+    color: #76675d;
+}
+
+.subscription-card-featured > p {
+    color: #d7c6b8;
+}
+
+
+/* FEATURES */
+
+.subscription-card ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 25px 0;
+
+    border-top: 1px solid #e2dbd3;
+}
+
+.subscription-card li {
+    padding: 13px 0;
+
+    border-bottom: 1px solid #e2dbd3;
+
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+
+    color: #5d4b3f;
+}
+
+.subscription-card-featured li {
+    color: #e4d4c7;
+    border-color: rgba(255,255,255,.15);
+}
+
+
+/* PLAN BUTTON */
+
+.subscription-card > a {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 15px 35px;
+
+    background: #4a2815;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-family: Poppins, sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    transition: .3s ease;
+}
+
+.subscription-card-featured > a {
+    background: #d6a542;
+    color: #2f1b0e;
+}
+
+.subscription-card > a:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   SHORT MENU CTA
+===================================================== */
+
+.caffeco-menu-cta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    height: 260px;
+    min-height: 260px;
+
+    background: #4a2815;
+    color: #fff;
+
+    overflow: hidden;
+}
+
+.caffeco-menu-cta > div:first-child {
+    padding: 35px 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+.caffeco-menu-cta span {
+    font-family: Poppins, sans-serif;
+    font-size: 8px;
+    letter-spacing: 4px;
+
+    color: #d6a542;
+}
+
+.caffeco-menu-cta h2 {
+    margin: 10px 0 18px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 46px;
+    font-weight: 500;
+    line-height: .9;
+
+    color: #fff;
+}
+
+.caffeco-menu-cta a {
+    display: inline-block;
+
+    width: fit-content;
+
+    padding: 10px 18px;
+
+    border: 1px solid #d6a542;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-family: Poppins, sans-serif;
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+.menu-cta-image {
+    height: 260px;
+    overflow: hidden;
+}
+
+.menu-cta-image img {
+    width: 100%;
+    height: 260px;
+
+    object-fit: cover;
+
+    opacity: .55;
+
+    transition: transform .8s ease;
+}
+
+.menu-cta-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .caffeco-menu-cta {
+        grid-template-columns: 1fr;
+
+        height: auto;
+        min-height: 0;
+    }
+
+    .caffeco-menu-cta > div:first-child {
+        padding: 45px 7%;
+    }
+
+    .caffeco-menu-cta h2 {
+        font-size: 44px;
+    }
+
+    .menu-cta-image {
+        height: 200px;
+    }
+
+    .menu-cta-image img {
+        height: 200px;
+    }
+
+}
+/* =====================================================
+   CAFFECO EXPERIENCE — COFFEE JOURNEY
+===================================================== */
+
+.caffeco-experience-journey {
+    width: 100%;
+
+    padding: 110px 7%;
+
+    background: #f7f2e9;
+
+    box-sizing: border-box;
+}
+
+
+/* HEADING */
+
+.experience-journey-heading {
+    max-width: 850px;
+
+    margin: 0 auto 80px;
+
+    text-align: center;
+}
+
+.experience-journey-heading h2 {
+    margin: 20px 0 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(55px, 6vw, 78px);
+
+    font-weight: 500;
+
+    line-height: .9;
+
+    color: #3d2414;
+}
+
+
+.experience-gold-line {
+    width: 70px;
+
+    height: 2px;
+
+    background: #d6a542;
+
+    margin: 38px auto;
+}
+
+
+.experience-journey-heading p {
+    max-width: 650px;
+
+    margin: auto;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 300;
+
+    line-height: 1.9;
+
+    color: #76675d;
+}
+
+
+/* =====================================================
+   PROCESS
+===================================================== */
+
+.experience-process {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 40px;
+}
+
+
+.experience-process-item {
+    position: relative;
+
+    padding: 0 0 20px;
+}
+
+
+.process-number {
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+    letter-spacing: 4px;
+
+    color: #c7953e;
+}
+
+
+/* IMAGE */
+
+.process-image {
+    width: 100%;
+
+    height: 300px;
+
+    overflow: hidden;
+
+    margin-bottom: 25px;
+}
+
+
+.process-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform .8s ease;
+}
+
+
+.experience-process-item:hover
+.process-image img {
+    transform: scale(1.04);
+}
+
+
+/* PROCESS TITLE */
+
+.experience-process-item h3 {
+    margin: 0 0 10px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 34px;
+
+    font-weight: 600;
+
+    color: #3d2414;
+}
+
+
+/* PROCESS TEXT */
+
+.experience-process-item p {
+    max-width: 330px;
+
+    margin: 0;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 300;
+
+    line-height: 1.8;
+
+    color: #76675d;
+}
+
+
+
+/* =====================================================
+   CAFFECO EXPERIENCE STORY
+===================================================== */
+
+.caffeco-experience-story {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 650px;
+
+    background: #fff;
+}
+
+
+/* IMAGE */
+
+.experience-story-image {
+    width: 100%;
+
+    height: 650px;
+
+    overflow: hidden;
+}
+
+
+.experience-story-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform .9s ease;
+}
+
+
+.experience-story-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* CONTENT */
+
+.experience-story-content {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 80px 9%;
+
+    box-sizing: border-box;
+}
+
+
+.experience-story-content h2 {
+    margin: 20px 0 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(55px, 5vw, 75px);
+
+    font-weight: 500;
+
+    line-height: .9;
+
+    color: #3d2414;
+}
+
+
+.experience-story-content
+.experience-gold-line {
+    margin: 35px 0;
+}
+
+
+.experience-story-content > p {
+    max-width: 580px;
+
+    margin: 0;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 300;
+
+    line-height: 1.9;
+
+    color: #76675d;
+}
+
+
+/* =====================================================
+   EXPERIENCE STATS
+===================================================== */
+
+.experience-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-top: 45px;
+}
+
+
+.experience-stat {
+    position: relative;
+
+    padding: 22px 15px;
+
+    border-top: 1px solid #ddd3c8;
+
+    border-left: 1px solid #d6a542;
+}
+
+
+.experience-stat::before {
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #d6a542;
+
+    top: -4px;
+
+    left: -4px;
+}
+
+
+.experience-stat strong {
+    display: block;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 38px;
+
+    font-weight: 600;
+
+    color: #3d2414;
+}
+
+
+.experience-stat span {
+    display: block;
+
+    margin-top: 8px;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    line-height: 1.6;
+
+    color: #9b8d82;
+}
+
+
+/* BUTTON */
+
+.experience-story-button {
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-top: 35px;
+
+    padding: 14px 24px;
+
+    background: #4a2815;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    letter-spacing: 2px;
+
+    transition: .3s ease;
+}
+
+
+.experience-story-button:hover {
+    background: #6a3b20;
+
+    transform: translateY(-3px);
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .caffeco-experience-journey {
+        padding: 75px 6%;
+    }
+
+
+    .experience-journey-heading {
+        margin-bottom: 55px;
+    }
+
+
+    .experience-process {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+
+    .process-image {
+        height: 300px;
+    }
+
+
+    .caffeco-experience-story {
+        grid-template-columns: 1fr;
+    }
+
+
+    .experience-story-image {
+        height: 400px;
+    }
+
+
+    .experience-story-content {
+        padding: 65px 7%;
+    }
+
+
+    .experience-story-content h2 {
+        font-size: 50px;
+    }
+
+
+    .experience-stats {
+        gap: 10px;
+    }
+
+
+    .experience-stat {
+        padding: 18px 12px;
+    }
+
+
+    .experience-stat strong {
+        font-size: 32px;
+    }
+
+
+    .experience-stat span {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .caffeco-experience-journey {
+        padding: 60px 20px;
+    }
+
+
+    .experience-journey-heading h2 {
+        font-size: 45px;
+    }
+
+
+    .process-image {
+        height: 260px;
+    }
+
+
+    .experience-story-image {
+        height: 320px;
+    }
+
+    .experience-story-content {
+        padding: 55px 20px;
+    }
+
+
+    .experience-story-content h2 {
+        font-size: 43px;
+    }
+
+
+    .experience-stats {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =====================================================
+   CAFFECO SIGNATURE ROASTS
+   Reference-inspired Home section
+===================================================== */
+
+.caffeco-signature-roasts {
+    width: 100%;
+    box-sizing: border-box;
+    background: #f1e7d6;
+    padding: 110px 7% 115px;
+}
+
+
+/* ---------- HEADING ---------- */
+
+.signature-roasts-heading {
+    max-width: 850px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.signature-roasts-heading .ref-kicker {
+    display: block;
+}
+
+.signature-roasts-heading h2 {
+    margin: 20px 0 0;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(55px, 6vw, 82px);
+    font-weight: 500;
+    line-height: .9;
+
+    color: #3d2414;
+}
+
+.signature-roasts-line {
+    width: 72px;
+    height: 2px;
+
+    background: #d6a542;
+
+    margin: 38px auto;
+}
+
+.signature-roasts-heading p {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.9;
+
+    color: #8b796b;
+}
+
+
+/* ---------- THREE CARDS ---------- */
+
+.signature-roasts-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 42px;
+}
+
+
+/* ---------- CARD ---------- */
+
+.signature-roast-card {
+    background: #ffffff;
+
+    overflow: hidden;
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.signature-roast-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 45px rgba(55, 30, 15, .13);
+}
+
+
+/* ---------- IMAGE ---------- */
+
+.signature-roast-image {
+    width: 100%;
+    height: 320px;
+
+    overflow: hidden;
+}
+
+.signature-roast-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .8s ease;
+}
+
+.signature-roast-card:hover
+.signature-roast-image img {
+    transform: scale(1.06);
+}
+
+
+/* ---------- CONTENT ---------- */
+
+.signature-roast-content {
+    padding: 34px 34px 38px;
+}
+
+.signature-roast-location {
+    display: block;
+
+    margin-bottom: 17px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+
+    letter-spacing: 4px;
+
+    color: #bd753c;
+}
+
+.signature-roast-content h3 {
+    margin: 0 0 18px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 31px;
+    font-weight: 600;
+
+    line-height: 1.05;
+
+    color: #3d2414;
+}
+
+.signature-roast-content p {
+    min-height: 105px;
+
+    margin: 0;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 13px;
+    font-weight: 300;
+
+    line-height: 1.9;
+
+    color: #8b796b;
+}
+
+
+/* ---------- PRICE ---------- */
+
+.signature-roast-price {
+    margin-top: 28px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 32px;
+    font-weight: 600;
+
+    color: #3d2414;
+}
+
+.signature-roast-price small {
+    font-family: Poppins, sans-serif;
+
+    font-size: 11px;
+    font-weight: 300;
+
+    color: #9b8b7e;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+.signature-roasts-button-wrap {
+    text-align: center;
+
+    margin-top: 60px;
+}
+
+.signature-roasts-button-wrap a {
+    display: inline-block;
+
+    padding: 15px 28px;
+
+    background: #4a2815;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 9px;
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+.signature-roasts-button-wrap a:hover {
+    background: #6a3b20;
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 950px) {
+
+    .signature-roasts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .signature-roast-card:last-child {
+        grid-column: 1 / -1;
+
+        width: 50%;
+        margin: 0 auto;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .caffeco-signature-roasts {
+        padding: 75px 6% 80px;
+    }
+
+    .signature-roasts-heading {
+        margin-bottom: 50px;
+    }
+
+    .signature-roasts-heading h2 {
+        font-size: 52px;
+    }
+
+    .signature-roasts-heading p {
+        font-size: 13px;
+    }
+
+    .signature-roasts-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .signature-roast-card:last-child {
+        grid-column: auto;
+
+        width: 100%;
+    }
+
+    .signature-roast-image {
+        height: 280px;
+    }
+
+    .signature-roast-content {
+        padding: 30px 25px 35px;
+    }
+
+    .signature-roast-content p {
+        min-height: auto;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .caffeco-signature-roasts {
+        padding: 60px 20px 70px;
+    }
+
+    .signature-roasts-heading h2 {
+        font-size: 45px;
+    }
+
+    .signature-roast-image {
+        height: 250px;
+    }
+
+}
+/* =====================================================
+   CAFFECO COLLECTION
+   SIGNATURE COFFEE SECTION
+===================================================== */
+
+.caffeco-coffee-collection {
+    width: 100%;
+    box-sizing: border-box;
+
+    background: #f1e7d6;
+
+    padding: 110px 7% 120px;
+}
+
+
+/* ---------- HEADING ---------- */
+
+.collection-section-heading {
+    max-width: 850px;
+
+    margin: 0 auto 75px;
+
+    text-align: center;
+}
+
+.collection-kicker {
+    display: block;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    letter-spacing: 5px;
+
+    color: #bd753c;
+}
+
+.collection-section-heading h2 {
+    margin: 20px 0 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(55px, 6vw, 82px);
+
+    font-weight: 500;
+
+    line-height: .9;
+
+    color: #3d2414;
+}
+
+.collection-heading-line {
+    width: 72px;
+
+    height: 2px;
+
+    background: #d6a542;
+
+    margin: 38px auto;
+}
+
+.collection-section-heading p {
+    max-width: 760px;
+
+    margin: auto;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 300;
+
+    line-height: 1.9;
+
+    color: #8b796b;
+}
+
+
+/* =====================================================
+   COFFEE CARDS
+===================================================== */
+
+.coffee-collection-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 42px;
+}
+
+.coffee-collection-card {
+    background: #ffffff;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(70, 40, 20, .08);
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.coffee-collection-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 20px 45px rgba(55, 30, 15, .12);
+}
+
+
+/* ---------- CARD IMAGE ---------- */
+
+.coffee-collection-image {
+    width: 100%;
+
+    height: 310px;
+
+    overflow: hidden;
+}
+
+.coffee-collection-image img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform .8s ease;
+}
+
+.coffee-collection-card:hover
+.coffee-collection-image img {
+    transform: scale(1.06);
+}
+
+
+/* ---------- CARD CONTENT ---------- */
+
+.coffee-collection-content {
+    padding: 34px 34px 38px;
+}
+
+.coffee-collection-content > span {
+    display: block;
+
+    margin-bottom: 17px;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    color: #bd5f32;
+}
+
+.coffee-collection-content h3 {
+    margin: 0 0 17px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 31px;
+
+    font-weight: 600;
+
+    line-height: 1.05;
+
+    color: #3d2414;
+}
+
+.coffee-collection-content p {
+    min-height: 105px;
+
+    margin: 0;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 300;
+
+    line-height: 1.9;
+
+    color: #8b796b;
+}
+
+
+/* ---------- PRICE ---------- */
+
+.collection-price {
+    margin-top: 28px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 31px;
+
+    font-weight: 600;
+
+    color: #3d2414;
+}
+
+.collection-price small {
+    font-family: Poppins, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 300;
+
+    color: #9b8b7e;
+}
+
+
+/* =====================================================
+   SUBSCRIPTIONS
+===================================================== */
+
+.caffeco-subscriptions {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    background: #eee2cf;
+
+    padding: 110px 7% 120px;
+}
+
+
+/* ---------- SUBSCRIPTION HEADING ---------- */
+
+.subscription-heading {
+    max-width: 900px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+}
+
+.subscription-heading > span {
+    display: block;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    letter-spacing: 5px;
+
+    color: #d09b32;
+}
+
+.subscription-heading h2 {
+    margin: 20px 0 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(55px, 6vw, 80px);
+
+    font-weight: 500;
+
+    line-height: .9;
+
+    color: #3d2414;
+}
+
+.subscription-line {
+    width: 72px;
+
+    height: 2px;
+
+    background: #d6a542;
+
+    margin: 38px auto;
+}
+
+.subscription-heading p {
+    max-width: 700px;
+
+    margin: auto;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 300;
+
+    line-height: 1.9;
+
+    color: #8b796b;
+}
+
+
+/* =====================================================
+   SUBSCRIPTION CARDS
+===================================================== */
+
+.subscription-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 42px;
+}
+
+.subscription-card {
+    background: #ffffff;
+
+    padding: 52px 42px 48px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(70, 40, 20, .08);
+}
+
+.subscription-card.subscription-featured {
+    background: #4a2815;
+
+    color: #ffffff;
+}
+
+.subscription-label {
+    display: block;
+
+    margin-bottom: 25px;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    letter-spacing: 4px;
+
+    color: #d6a542;
+}
+
+.subscription-card h3 {
+    margin: 0;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 30px;
+
+    font-weight: 600;
+
+    color: #3d2414;
+}
+
+.subscription-featured h3 {
+    color: #ffffff;
+}
+
+
+/* ---------- SUBSCRIPTION PRICE ---------- */
+
+.subscription-price {
+    margin: 18px 0 22px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 54px;
+
+    font-weight: 500;
+
+    line-height: 1;
+
+    color: #d8a63d;
+}
+
+.subscription-main {
+    margin: 0 0 20px;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 13px;
+
+    color: #6f5c4e;
+}
+
+.subscription-featured .subscription-main {
+    color: #ffffff;
+}
+
+
+/* ---------- FEATURES ---------- */
+
+.subscription-card ul {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0 0 30px;
+}
+
+.subscription-card li {
+    padding: 12px 0;
+
+    border-top: 1px solid rgba(70, 40, 20, .13);
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 300;
+
+    color: #6f5c4e;
+}
+
+.subscription-card li:last-child {
+    border-bottom: 1px solid rgba(70, 40, 20, .13);
+}
+
+.subscription-featured li {
+    color: #ffffff;
+
+    border-color: rgba(255,255,255,.18);
+}
+
+
+/* ---------- PLAN BUTTON ---------- */
+
+.subscription-card a {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background: #4a2815;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 9px;
+
+    font-weight: 500;
+
+    letter-spacing: 3px;
+
+    transition: transform .3s ease;
+}
+
+.subscription-card a:hover {
+    transform: translateY(-3px);
+}
+
+.subscription-featured a {
+    background: #dcae45;
+
+    color: #3d2414;
+}
+
+
+/* =====================================================
+   COLLECTION CTA
+===================================================== */
+
+.caffeco-collection-cta {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    min-height: 430px;
+
+    background: #4a2815;
+
+    color: #ffffff;
+}
+
+.collection-cta-content {
+    padding: 75px 10%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+.collection-cta-content > span {
+    font-family: Poppins, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 4px;
+
+    color: #d6a542;
+}
+
+.collection-cta-content h2 {
+    margin: 15px 0 20px;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(50px, 5vw, 70px);
+
+    font-weight: 500;
+
+    line-height: .9;
+}
+
+.collection-cta-content p {
+    max-width: 480px;
+
+    margin: 0 0 28px;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: 300;
+
+    line-height: 1.8;
+
+    color: #d8c8ba;
+}
+
+.collection-cta-content a {
+    align-self: flex-start;
+
+    padding: 14px 24px;
+
+    border: 1px solid #d6a542;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-family: Poppins, sans-serif;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+}
+
+.collection-cta-image {
+    overflow: hidden;
+}
+
+.collection-cta-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: .65;
+
+    transition: transform .8s ease;
+}
+
+.collection-cta:hover
+.collection-cta-image img {
+    transform: scale(1.04);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 950px) {
+
+    .coffee-collection-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .subscription-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .subscription-card {
+        max-width: 600px;
+
+        width: 100%;
+
+        margin: auto;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .caffeco-coffee-collection {
+        padding: 75px 6% 80px;
+    }
+
+    .collection-section-heading {
+        margin-bottom: 50px;
+    }
+
+    .collection-section-heading h2 {
+        font-size: 50px;
+    }
+
+    .coffee-collection-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .coffee-collection-image {
+        height: 280px;
+    }
+
+    .coffee-collection-content {
+        padding: 30px 25px 35px;
+    }
+
+    .coffee-collection-content p {
+        min-height: auto;
+    }
+
+
+    .caffeco-subscriptions {
+        padding: 75px 6% 80px;
+    }
+
+    .subscription-heading {
+        margin-bottom: 50px;
+    }
+
+    .subscription-heading h2 {
+        font-size: 50px;
+    }
+
+    .subscription-card {
+        padding: 42px 28px;
+    }
+
+
+    .caffeco-collection-cta {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-cta-content {
+        min-height: 390px;
+
+        padding: 60px 8%;
+    }
+
+    .collection-cta-image {
+        height: 300px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .caffeco-coffee-collection {
+        padding: 60px 20px 70px;
+    }
+
+    .collection-section-heading h2 {
+        font-size: 44px;
+    }
+
+    .coffee-collection-image {
+        height: 250px;
+    }
+
+    .subscription-heading h2 {
+        font-size: 44px;
+    }
+
+}
+/* =========================================================
+   CAFFECO COLLECTION — KAAPI & CO STYLE COFFEE CARDS
+========================================================= */
+
+.collection-coffee-section {
+    background: #f4ead8;
+    padding: 90px 4%;
+}
+
+/* Heading */
+
+.collection-coffee-heading {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 70px;
+}
+
+.collection-coffee-heading .ref-kicker {
+    display: block;
+    margin-bottom: 18px;
+}
+
+.collection-coffee-heading h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(48px, 6vw, 82px);
+    line-height: .95;
+    font-weight: 500;
+    color: #351d12;
+    margin: 0 0 25px;
+}
+
+.collection-coffee-heading p {
+    max-width: 760px;
+    margin: auto;
+    font-family: Poppins, sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #8f7b6c;
+}
+
+
+/* =========================================================
+   3 COLUMN CARD GRID
+========================================================= */
+
+.collection-coffee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 42px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   INDIVIDUAL CARD
+========================================================= */
+
+.collection-coffee-card {
+    background: #fff;
+    border: 1px solid rgba(70, 40, 20, .15);
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+    height: 100%;
+
+    transition: transform .4s ease,
+                box-shadow .4s ease;
+}
+
+.collection-coffee-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(55, 30, 15, .12);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.collection-coffee-card-image {
+    width: 100%;
+    height: 330px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.collection-coffee-card-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform .6s ease;
+}
+
+.collection-coffee-card:hover
+.collection-coffee-card-image img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.collection-coffee-card-content {
+    padding: 38px 34px 34px;
+
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+}
+
+
+/* Category */
+
+.collection-coffee-card-category {
+    font-family: Poppins, sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #b45d2d;
+
+    margin-bottom: 20px;
+}
+
+
+/* Coffee name */
+
+.collection-coffee-card h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 32px;
+    line-height: 1.05;
+    font-weight: 500;
+
+    color: #351d12;
+
+    margin: 0 0 22px;
+}
+
+
+/* Description */
+
+.collection-coffee-card p {
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    line-height: 1.9;
+
+    color: #9a8879;
+
+    margin: 0;
+
+    max-width: 420px;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.collection-coffee-card-price {
+    margin-top: auto;
+    padding-top: 45px;
+
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.collection-coffee-card-price strong {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 31px;
+    font-weight: 500;
+
+    color: #351d12;
+}
+
+.collection-coffee-card-price span {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 17px;
+
+    color: #8f7b6c;
+}
+
+
+/* =========================================================
+   FEATURED MIDDLE CARD
+========================================================= */
+
+.collection-coffee-card.featured {
+    border: 1px solid #c99b42;
+}
+
+.collection-coffee-card.featured
+.collection-coffee-card-content {
+    background: #fffdf9;
+}
+
+
+/* =========================================================
+   COLLECTION INTRO
+========================================================= */
+
+.collection-coffee-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    max-width: 1500px;
+    margin: 0 auto 45px;
+}
+
+.collection-coffee-intro h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(42px, 5vw, 68px);
+    font-weight: 500;
+    line-height: .95;
+
+    color: #351d12;
+
+    margin: 0;
+}
+
+.collection-coffee-intro p {
+    max-width: 500px;
+
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: #8f7b6c;
+
+    margin: 0;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .collection-coffee-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .collection-coffee-card-image {
+        height: 280px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .collection-coffee-section {
+        padding: 60px 20px;
+    }
+
+    .collection-coffee-heading {
+        margin-bottom: 45px;
+    }
+
+    .collection-coffee-heading h2 {
+        font-size: 48px;
+    }
+
+    .collection-coffee-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .collection-coffee-card-image {
+        height: 300px;
+    }
+
+    .collection-coffee-card-content {
+        padding: 30px 25px;
+    }
+
+    .collection-coffee-card h3 {
+        font-size: 30px;
+    }
+
+    .collection-coffee-intro {
+        display: block;
+    }
+
+    .collection-coffee-intro p {
+        margin-top: 20px;
+    }
+
+}
+/* =========================================================
+   CAFFECO SIGNATURE COFFEE
+   KAAPI & CO. STYLE
+========================================================= */
+
+.caffeco-kaapi-coffee {
+    width: 100% !important;
+    background: #f3e8d5 !important;
+    padding: 100px 55px 110px !important;
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.caffeco-kaapi-heading {
+    width: 100% !important;
+    max-width: 1100px !important;
+    margin: 0 auto 65px !important;
+    text-align: center !important;
+}
+
+.caffeco-kaapi-heading > span {
+    display: block !important;
+
+    font-family: Poppins, sans-serif !important;
+    font-size: 11px !important;
+    font-weight: 500 !important;
+
+    letter-spacing: 5px !important;
+    color: #c48b27 !important;
+
+    margin-bottom: 20px !important;
+}
+
+.caffeco-kaapi-heading h2 {
+    margin: 0 !important;
+
+    font-family: "Cormorant Garamond", serif !important;
+    font-size: 68px !important;
+    line-height: .95 !important;
+    font-weight: 500 !important;
+
+    color: #321c12 !important;
+}
+
+.caffeco-kaapi-line {
+    width: 70px !important;
+    height: 2px !important;
+
+    background: #d39b31 !important;
+
+    margin: 28px auto !important;
+}
+
+.caffeco-kaapi-heading p {
+    max-width: 800px !important;
+    margin: 0 auto !important;
+
+    font-family: Poppins, sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.9 !important;
+
+    color: #8d7969 !important;
+}
+
+
+/* =========================================================
+   THREE CARDS
+========================================================= */
+
+.caffeco-kaapi-grid {
+    width: 100% !important;
+    max-width: 1500px !important;
+
+    margin: 0 auto !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 42px !important;
+
+    align-items: stretch !important;
+}
+
+
+/* =========================================================
+   CARD BOX
+========================================================= */
+
+.caffeco-kaapi-card {
+    background: #ffffff !important;
+
+    border: 1px solid #dfd4c5 !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    overflow: hidden !important;
+
+    box-sizing: border-box !important;
+
+    min-height: 650px !important;
+
+    transition: transform .4s ease,
+                box-shadow .4s ease !important;
+}
+
+.caffeco-kaapi-card:hover {
+    transform: translateY(-7px) !important;
+
+    box-shadow:
+        0 20px 45px rgba(54, 31, 18, .13) !important;
+}
+
+
+/* =========================================================
+   IMAGE BOX
+========================================================= */
+
+.caffeco-kaapi-image {
+    width: 100% !important;
+    height: 330px !important;
+
+    overflow: hidden !important;
+
+    flex-shrink: 0 !important;
+}
+
+.caffeco-kaapi-image img {
+    display: block !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+    object-position: center !important;
+
+    transition: transform .6s ease !important;
+}
+
+.caffeco-kaapi-card:hover
+.caffeco-kaapi-image img {
+    transform: scale(1.05) !important;
+}
+
+
+/* =========================================================
+   CONTENT BOX
+========================================================= */
+
+.caffeco-kaapi-content {
+    width: 100% !important;
+
+    padding: 38px 35px 32px !important;
+
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    flex: 1 !important;
+}
+
+
+/* =========================================================
+   CATEGORY
+========================================================= */
+
+.caffeco-kaapi-category {
+    display: block !important;
+
+    font-family: Poppins, sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 500 !important;
+
+    letter-spacing: 4px !important;
+
+    color: #bd5c2b !important;
+
+    margin-bottom: 20px !important;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.caffeco-kaapi-content h3 {
+    margin: 0 0 22px !important;
+
+    font-family: "Cormorant Garamond", serif !important;
+    font-size: 34px !important;
+    line-height: 1.05 !important;
+    font-weight: 500 !important;
+
+    color: #321c12 !important;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.caffeco-kaapi-content p {
+    margin: 0 !important;
+
+    font-family: Poppins, sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.9 !important;
+
+    color: #968374 !important;
+}
+
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.caffeco-kaapi-price {
+    margin-top: auto !important;
+    padding-top: 45px !important;
+
+    display: flex !important;
+    align-items: baseline !important;
+
+    gap: 8px !important;
+}
+
+.caffeco-kaapi-price strong {
+    font-family: "Cormorant Garamond", serif !important;
+    font-size: 32px !important;
+    font-weight: 500 !important;
+
+    color: #321c12 !important;
+}
+
+.caffeco-kaapi-price span {
+    font-family: "Cormorant Garamond", serif !important;
+    font-size: 17px !important;
+
+    color: #8d7969 !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .caffeco-kaapi-coffee {
+        padding: 80px 30px 90px !important;
+    }
+
+    .caffeco-kaapi-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 25px !important;
+    }
+
+    .caffeco-kaapi-image {
+        height: 300px !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .caffeco-kaapi-coffee {
+        padding: 65px 18px 75px !important;
+    }
+
+    .caffeco-kaapi-heading {
+        margin-bottom: 45px !important;
+    }
+
+    .caffeco-kaapi-heading h2 {
+        font-size: 48px !important;
+    }
+
+    .caffeco-kaapi-heading p {
+        font-size: 14px !important;
+    }
+
+    .caffeco-kaapi-grid {
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+    }
+
+    .caffeco-kaapi-card {
+        min-height: auto !important;
+    }
+
+    .caffeco-kaapi-image {
+        height: 280px !important;
+    }
+
+    .caffeco-kaapi-content {
+        padding: 30px 25px !important;
+    }
+
+    .caffeco-kaapi-content h3 {
+        font-size: 31px !important;
+    }
+
+}
