@@ -84,8 +84,8 @@ body{overflow-x:hidden}
 
 /* CTA */
 .ref-cta{
-    min: height 380px;px;
-    height: 360px;px;
+    min: height 380px;
+    height: 360px;
     display:grid;
     grid-template-columns:1fr 1fr;
     background:var(--ref-brown);
